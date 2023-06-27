@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+.home {
+    background:url("../images/aa.JPG");
+    background-size:cover;
+    height:100vh;
+}
+.nav{
+    height:50px;
+    background:rgb(81, 108, 186);
+}
+.nav div{
+    display:inline-block;
+    position:absolute;
+    left:0;
+    padding:15px;
+    font-size:20px;
+    color:white;
+}
+.nav ul{
+    position:absolute;
+    right:5px;
+}
+.nav ul li{
+    display:inline-flex;
+}
+.nav ul li a{
+    color:white;
+    padding:5px
+}
+.home .text-container{
+    text-align:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:90vh;
+}
+.about .about-content{
+    margin:150px auto 0 auto;
+    width:500px;
+}
+.about .about-content h1{
+    text-align:center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color:red;
+}
+.about .about-content p{
+    text-align:justify;font-family: 'Segoe UI', Tahoma;color:green;
+}
+
+.service-content {
+    text-align:center
+}
+
+.card-container ul{
+    padding: 0;
+}
+.card-container ul li{
+    list-style:none;
+    display:inline-block;
+    margin:20px;
+    width:300px;
+}
+
+.card-container ul li p{
+    text-align: justify;
+}
+
+.service-content h1{
+    font-family: 'Segoe UI',  sans-serif;
+    color:red;
+}
+
+.card-container ul li p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times;
+    color:green;
+}
+
+.contact-content{
+    margin:80px auto 0 auto;
+    text-align: center;
+}
+
+.contact-content h1{
+    font-family: 'Segoe UI', Tahoma;
+    color:red;
+}
+.address-holder {
+    font-family: 'Times New Roman', serif;
+}
