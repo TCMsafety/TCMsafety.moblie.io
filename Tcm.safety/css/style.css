@@ -1,0 +1,11 @@
+body{
+background-color: #F89B66;
+display: flex;
+align-items:center;
+justify-content: center;
+}
+.background{
+    background:url("../images/ba.png");
+    background-size:auto auto;
+    height:100vh;
+}
