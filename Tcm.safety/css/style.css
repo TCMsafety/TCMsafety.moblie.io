@@ -6,6 +6,14 @@ justify-content: center;
 }
 .background{
     background:url("../images/ba.png");
-    background-size:auto auto;
+    background-size:cover;
     height:100vh;
+}
+.box{
+    align-items:center;
+    justify-content: center;
+    background-color: #e6e1df;
+    width: 400px;
+    color:#000000cc;
+    padding: 40px;
 }
