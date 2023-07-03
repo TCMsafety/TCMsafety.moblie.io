@@ -14,6 +14,7 @@ justify-content: center;
     background:url("../images/ba.png");
     
     background-size: 100%;
+    height: auto;
 }
 .background.h1{
     background-position: top;
