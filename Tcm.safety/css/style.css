@@ -11,7 +11,7 @@ justify-content: center;
 .background{
     background:url("../images/ba.png");
     
-    background-size: cover;
+    background-size: fit-content;
     max-height: fit-content;
 }
 .background.h1{
