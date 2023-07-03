@@ -11,7 +11,7 @@ body{
     .background{
         background:url("../images/ba.png");
         
-        background-size: fit-content;
+        background-size: cover;
         max-height: fit-content;
     }
     .background.h1{
