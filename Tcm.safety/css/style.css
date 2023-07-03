@@ -13,8 +13,8 @@ justify-content: center;
 .background{
     background:url("../images/ba.png");
     
-    background-size: 100%;
-    height: auto;
+    background-size: cover;
+    height: cover;
 }
 .background.h1{
     background-position: top;
