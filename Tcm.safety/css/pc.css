@@ -1,0 +1,8 @@
+body{margin:20px}
+
+#container{width: 940px;margin:auto}
+
+header{display:block;clear:both;margin:0 0 10px}
+
+aside{float:right;width:320px;margin:0 0 20px;
+border:solid 1px lightgray; border-radius:10px}
