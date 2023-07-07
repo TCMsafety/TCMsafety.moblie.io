@@ -47,8 +47,24 @@ body{
         font-size: 40px;
     }
     
-    
-    
-    
-    
-    
+    #log1{
+        background-color: #7DBEB8;
+        color:white;
+        border-radius:20px;   
+        border:1px solid #7DBEB8;
+    }
+
+    #log1:active{
+        background-color: #6ab0a8;
+    }
+
+    #log2{
+        background-color: #feffff;
+        color:#7DBEB8;
+        border-radius:20px;   
+        border:1px solid #7DBEB8;
+    }
+
+    #log2:active{
+        background-color: #d4d4d4;
+    }
