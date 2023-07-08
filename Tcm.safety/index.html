@@ -7,6 +7,14 @@
     <link rel="stylesheet" type="text/css" href="./css/tab.css"media="screen and (min-width:600px)and (max-width:979px)">
     <link rel="stylesheet" type="text/css" href="./css/phone.css"media="screen and (max-width:599px)">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+        function login(){
+            var usename=account.value
+            if (account.value==password.value && account.value.length==4){
+                location.href="menu.html?"+usename;
+            }else{alert("帳號或密碼不符")}
+        }
+    </script>
 </header>
 <body>
 
@@ -16,11 +24,11 @@
         <img src="./images/bus1.png">
         <div class="button1">
         <div><h1>澳巴安全管理一戶通</h1></div>
-        
-    <input id="account" type="text" placeholder="請輸入帳號"/><br>
-    <input id="password" type="password" placeholder="請輸入密碼"/><br>
+     
+    <input id="account" name="account" type="text" placeholder="請輸入帳號" required ><br>
+    <input id="password" name="password" type="password" placeholder="請輸入密碼" required/><br>
        
-    <input id="log1" type="submit" value="登入"/><br>
+    <input id="log1" type="submit" value="登入"  onclick="login()"/><br>
    
     <input id="log2" type="submit" value="管理員登入">
             

@@ -45,6 +45,7 @@ body{
     
     .button1 input[type="submit"]{
         font-size: 40px;
+        font-weight: 500px;
     }
     
     #log1{
