@@ -1,21 +1,50 @@
 
 body{
     background-color: #d9d9d9;
+    background-size:100%;
     display: block;
     overflow:auto;
+    margin: -15px 0px; padding: 0px 0px;
     }
 
 .top{
     background-color: #F89B66;
-    align-items:left;
     height:max-content;
-    width:120%;
+    width:100%;
     font-size: 20px;
+    
     }
 
 .line{
     background-color: #ac9388;
     height:10px;
-    width: 120%;
+    width: 100%;
+}
+
+.top-botton{
+    position: absolute;
+    margin: 0px 0px; padding: 0px 0px;
+    right: 2px;
+}
+
+#photo {
+    background:url(../images/picture.png) ;
+    height:27px;
+    width:30px;
+    border:none;
+}
+
+#bar {
+    background:url(../images/bar.png) ;
+    height:27px;
+    width:30px;
+    margin: 12px ;
+    border:none;
+}
+
+h2{
+    position:relative;
+    top: 15px;left:15px;
+    
 }
 
