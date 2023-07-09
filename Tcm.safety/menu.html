@@ -2,17 +2,70 @@
 <header>
     <meta charset="utf-8">
     <title>澳巴安全管理一戶通</title>
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/pc.css"media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/tab.css"media="screen and (min-width:600px)and (max-width:979px)">
+    <link rel="stylesheet" type="text/css" href="./css/phone.css"media="screen and (max-width:599px)">
+    <link rel="stylesheet" href="./css/menu-style.css">
     <script type="text/javascript">
         var name =location.search;
         var account;
         var usename;
+        var nametag;
         account=name.split("?")
         usename=account[1];
-        document.write(usename);
+        if(usename=='0579'){nametag='謝堅慧'}
+        else if(usename=='0590'){nametag='王禺焜'}
+        else if(usename=='0591'){nametag='黃嘉欣經理'}
+        else if(usename=='2322'){nametag='陳天恩主任'}
+        else if(usename=='2199'){nametag='鄺峰'}
+        else if(usename=='2339'){nametag='趙柯'}
+        else if(usename=='2352'){nametag='黃家柏'}
+        else if(usename=='2393'){nametag='李俊星'}
+        else if(usename=='2312'){nametag='羅秀香'}
+        else if(usename=='2313'){nametag='吳坤堯'}
+        else if(usename=='2314'){nametag='麥景昌'}
+        else if(usename=='2336'){nametag='李志遠'}
+        else if(usename=='2397'){nametag='劉玲球'}
+        else if(usename=='2402'){nametag='許佳儀'}
+        else if(usename=='2403'){nametag='熊金蘭'}
+        else if(usename=='2405'){nametag='黃健星'}
+        else if(usename=='2022'){nametag='霍華標'}
+        else if(usename=='2229'){nametag='關華根'}
+        else if(usename=='2236'){nametag='陳偉娟'}
+        else if(usename=='2237'){nametag='鄭惠年'}
+        else if(usename=='2325'){nametag='何錦添'}
+        else if(usename=='2328'){nametag='梁嘉輝'}
+        else if(usename=='2382'){nametag='黃則文'}
+        else if(usename=='2398'){nametag='林民森'}
+        else if(usename=='2399'){nametag='溫永華'}
+        else if(usename=='2401'){nametag='歐陽永秋'}
+        else{nametag=usename}
     </script>
 </header>
 <body>
-    <h1>Building</h1>
-
+    <div class ="top">
+        <div class="top-botton">
+        <button id="photo"></button>
+        <button id="bar"></button></div>
+        <div></div>
+        <div class="top-title">
+                <h2>安全管理一戶通</h2>
+            <script>
+                document.write('歡迎你, '+nametag)
+            </script>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <p>
+    <div class="clock"></div></p>
+    <div class="buttons">
+        <button id="check"></button>
+        <button id="report"></button>
+        <button id="train"></button>
+        <button id="email"></button>
+        <button id="wechat"></button>
+        <button id="check"></button>
+    </div>
 </body>
