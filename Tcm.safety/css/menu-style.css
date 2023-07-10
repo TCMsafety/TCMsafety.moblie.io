@@ -49,3 +49,63 @@ h2{
     
 }
 
+.buttons{
+    display: block;
+    margin:0 auto;
+    text-align:center;
+}
+
+#check{
+    background: url(../images/button-check.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
+#report{
+    background: url(../images/button-report.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
+#train{
+    background: url(../images/button-train.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
+#wechat{
+    background: url(../images/button-wechat.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
+#email{
+    background: url(../images/button-email.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
+#cloud{
+    background: url(../images/button-cloud.png);
+    background-size: 100%;
+    height:156px;
+    width:164px;
+    border:none;
+    margin:2px;
+}
+
