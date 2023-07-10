@@ -4,13 +4,13 @@ body{
     background-size:100%;
     display: block;
     overflow:auto;
-    margin: -15px -15px; padding: 0px 0px;
+    margin: 0px 0px; padding: 0px 0px;
     }
 
 .top{
     background-color: #F89B66;
     height:max-content;
-    width:120%;
+    width:100%;
     font-size: 20px;
     
     
