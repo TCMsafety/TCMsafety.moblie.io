@@ -4,19 +4,24 @@ body{
     background-size:100%;
     display: block;
     overflow:auto;
-    margin: 0px 0px; padding: 0px 0px;
+    
+    
     }
 
 .top{
-    background-color: #F89B66;
-    height:max-content;
-    width:100%;
-    font-size: 20px;
-    
+    background: #F89B66;
+    height: 130px;
+    width: 100%;
+    margin: -20px, -20px;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    left:0; top:0;
     
     }
 
 .line{
+    display: block;
     background-color: #ac9388;
     height:10px;
     width: 100%;
@@ -24,7 +29,7 @@ body{
 
 .top-botton{
     position: absolute;
-    margin: 0px 0px; padding: 0px 0px;
+    margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px;
     right: 2px;
 }
 
@@ -50,8 +55,8 @@ h2{
 }
 
 .buttons{
-    display: block;
-    margin:0 auto;
+    position: relative;
+    top: 130px; left:0; 
     text-align:center;
 }
 

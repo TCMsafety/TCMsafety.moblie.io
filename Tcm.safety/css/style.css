@@ -4,15 +4,18 @@ body{
     align-items:center;
     justify-content: center;
     overflow:hidden;
+    
     }
     
     
     
     .background{
         background:url("../images/ba.png");
-        
         background-size: cover;
+        width: max-content;
         max-height: fit-content;
+        
+        
     }
     .background.h1{
         background-position: top;

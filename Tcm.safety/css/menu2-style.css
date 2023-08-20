@@ -1,0 +1,18 @@
+body{
+    background-color: #d9d9d9;
+    background-size: cover;
+    display: block;
+    overflow:auto;
+}
+
+.top{
+    background: #F89B66;
+    height: 100px;
+    width: 100%;
+    margin: -20px, -20px;
+    font-size:20px;
+    color:white;
+    position:absolute;
+    left:0; top:0; 
+}
+
