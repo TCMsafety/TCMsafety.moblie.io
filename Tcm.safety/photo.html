@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title>澳巴安全管理一戶通</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./css/pc.css"media="screen">
+    <link rel="stylesheet" type="text/css" href="./css/tab.css"media="screen and (min-width:600px)and (max-width:979px)">
+    <link rel="stylesheet" type="text/css" href="./css/phone.css"media="screen and (max-width:599px)">
+    <link rel="stylesheet" href="./css/menu-style.css">
+    </head>
+
+    <body>
+        <button id="startbutton">拍照<button>
+        <video id="video"><video>
+        <canvas id="canvas"><canvas>
+          <script type="text/javascript"> 
+          const video = document.querySelector('#video');
+          const canvas = document.querySelector('#canvas');
+          const startButton = document.querySelector('#startbutton');
+
+            async function startCamera() 
+            {const stream = await navigator.mediaDevices.getUserMedia({video: true});video.srcObject = stream;video.play();}
+            function takePhoto() 
+            {canvas.width = video.videoWidth;canvas.height = video.videoHeight;canvas.getContext('2d').drawImage(video, 0, 0);}
+            startCamera();
+            startButton.addEventListener('click', takePhoto);
+            </script>
+    </body>
+</html>

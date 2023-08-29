@@ -10,7 +10,8 @@
     <script type="text/javascript">
         function login(){
             var usename=account.value
-            if (account.value==password.value && account.value.length==4){
+            myReg= /^[0-9\s]*$/
+            if (account.value==password.value && account.value.length==4 && account.value.match(myReg)){
                 location.href="menu.html?"+usename;
             }else{alert("帳號或密碼不符")}
         }
