@@ -11,20 +11,21 @@
     </head>
 
     <body>
-        <button id="startbutton">拍照<button>
-        <video id="video"><video>
-        <canvas id="canvas"><canvas>
-          <script type="text/javascript"> 
+        <button id="startbutton">拍照</button>
+        <video id="video"></video>
+        <canvas id="canvas"></canvas>
+          <script type="text/javascript">
           const video = document.querySelector('#video');
           const canvas = document.querySelector('#canvas');
           const startButton = document.querySelector('#startbutton');
 
             async function startCamera() 
-            {const stream = await navigator.mediaDevices.getUserMedia({video: true});video.srcObject = stream;video.play();}
+            {const stream = await navigator.mediaDevices.getUserMedia({video: true, facingMode: { exact: "environment" }});
+            video.srcObject = stream;video.play();}
             function takePhoto() 
             {canvas.width = video.videoWidth;canvas.height = video.videoHeight;canvas.getContext('2d').drawImage(video, 0, 0);}
             startCamera();
-            startButton.addEventListener('click', takePhoto);
+            startButton.addEventListener('click', takePhoto());
             </script>
     </body>
 </html>
