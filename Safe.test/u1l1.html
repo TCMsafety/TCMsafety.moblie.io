@@ -8,7 +8,7 @@
             ol{font-size: large;}
             header{width: 100%;	height: 40px;}
             .container{position:fixed;width:100%;z-index: 1000;top: 0;background-color: #f8910b;font-size:22px;left: 0;
-            border-bottom: 1px solid #EAEAEA;border-color: rgba(0,0,0,.08);box-shadow: 0 1px 3px rgba(0,0,0,.03);}
+            border-bottom: 1px solid #EAEAEA;border-color: rgba(0,0,0,.08);box-shadow: 0 1px 3px rgba(0,0,0,.03);text-align: center;}
             h4{font-size: large;}
         </style>
         <script> 
@@ -29,19 +29,24 @@
     <body>
         <header class="header">
             <div class="container">
-               
+               <div id="top-title">
                 <a href="./menu.html"><img src="./images/arrow-back.png" width="20" ></a> 
-                公共部分考核—单选题&nbsp;已完成:&nbsp;&nbsp;<b><span id="que_num">1</span>/169</b>
-                <p></p>
-                </div>
+                公共部分考核—单选题&nbsp;
+                <a href="./u1l2.html"><img src="./images/arrow-next.png" width="20" ></a></div>
+                <div id="top-statu">
+                已完成:&nbsp;<b><span id="que_num">1</span>/169</b>&nbsp;&nbsp;
+                书签：<a href="#01">01</a>&nbsp;&nbsp;<a href="#50">50</a>
+                &nbsp;<a href="#100">100</a>&nbsp;&nbsp;<a href="#150">150</a>
+                &nbsp;<a href="#169">169</a>
+                </div></div>
         </header>
 <section class="ques_list">
-    <div class="Que">
-        <h4 class="Que-title">（1）依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-            可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+    <div class="Que">   
+        <h4 class="Que-title"><a name="01">（1）依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
+            可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</a></h4>
         <ol type="A">
             <li onclick="show_false(this)">200</li>
-            <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
+            <li onclick="show_a1();this.onclick=null;show_true(this)"><span id="a1">100</span>
                 &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
             <li onclick="show_false(this)">500</li>
             <li onclick="show_false(this)">l000</li>
@@ -61,7 +66,7 @@
     <h4 class="Que-title">（2）依据《中华人民共和国安全生产法》，属于国家规定的高危行业、领域的生产经营单位，应当投保<span id="a2_1">____</span>。</h4>
     <ol type="A">
         <li onclick="show_false(this)">产品责任保险</li>
-        <li onclick="show_a2();show_true(this)"><span id="a2">安全生产责任保险</span>
+        <li onclick="show_a2();this.onclick=null;show_true(this)"><span id="a2">安全生产责任保险</span>
             &nbsp;<span><img id="a2_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
         <li onclick="show_false(this)">火灾公众责任保险</li>
         <li onclick="show_false(this)">环境污染责任保险</li>
@@ -82,7 +87,7 @@
 <ol type="A">
     <li onclick="show_false(this)">生活设施</li>
     <li onclick="show_false(this)">福利设施 </li>
-    <li onclick="show_a3();show_true(this)"><span id="a3">安全设施</span>
+    <li onclick="show_a3();this.onclick=null;show_true(this)"><span id="a3">安全设施</span>
         &nbsp;<span><img id="a3_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">工作设施</li>
 </ol>
@@ -100,7 +105,7 @@
 
 <h4 class="Que-title">（4）依据《中华人民共和国安全生产法》，事故调查处理应当按照科学严谨、依法依规、实事求是、注重实效的原则，及时、准确地查清<span id="a4_1">____</span>，查明事故性质和责任，评估应急处置工作，总结事故教训，提出整改措施，并对事故责任单位和人员提出处理建议。</h4>
 <ol type="A">
-     <li onclick="show_a4();show_true(this)"><span id="a4">事故原因</span>
+     <li onclick="show_a4();this.onclick=null;show_true(this)"><span id="a4">事故原因</span>
         &nbsp;<span><img id="a4_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">事故类型 </li>
     <li onclick="show_false(this)">事故影响</li>
@@ -122,7 +127,7 @@
 <ol type="A">
     <li onclick="show_false(this)">可以</li>
     <li onclick="show_false(this)">经有关部门批准可以</li>
-    <li onclick="show_a5();show_true(this)"><span id="a5">不得</span>
+    <li onclick="show_a5();this.onclick=null;show_true(this)"><span id="a5">不得</span>
         &nbsp;<span><img id="a5_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">一般不得</li>
 </ol>
@@ -142,7 +147,7 @@
 <ol type="A">
     <li onclick="show_false(this)">只能依法享有工伤保险补偿</li>
     <li onclick="show_false(this)">只能依照有关民事法律的规定向本单位提出赔偿</li>
-    <li onclick="show_a6();show_true(this)"><span id="a6">除依法享有工伤保险外，可以依照有关民事法律的规定向本单位提出赔偿</span>
+    <li onclick="show_a6();this.onclick=null;show_true(this)"><span id="a6">除依法享有工伤保险外，可以依照有关民事法律的规定向本单位提出赔偿</span>
         &nbsp;<span><img id="a6_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">依法享有工伤保险，但应当首先向本单位提出民事赔偿</li>
 </ol>
@@ -161,7 +166,7 @@
 <h4 class="Que-title">（7）依据《中华人民共和国安全生产法》，对未依法取得批准或者验收合格的单位擅自从事有关活动的，负责行政审批的部门发现或者接到举报后应当立即<span id="a7_1">____</span>，并依法予以处理。</h4>
 <ol type="A">
     <li onclick="show_false(this)">予以停产整顿</li>
-    <li onclick="show_a7();show_true(this)"><span id="a7">予以取缔</span>
+    <li onclick="show_a7();this.onclick=null;show_true(this)"><span id="a7">予以取缔</span>
         &nbsp;<span><img id="a7_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">予以责令整改</li>
     <li onclick="show_false(this)">予以通报批评</li>
@@ -181,7 +186,7 @@
 <h4 class="Que-title">（8）依据《中华人民共和国安全生产法》，生产经营单位不得因从业人员对本单位安全生产工作提出批评、检举、控告或者<span id="a8_1">____</span>，而降低其工资、福利等待遇或者解除与其订立的劳动合同。</h4>
 <ol type="A">
     <li onclick="show_false(this)">擅自停止作业</li>
-    <li onclick="show_a8();show_true(this)"><span id="a8">拒绝违章指挥、强令冒险作业 </span>
+    <li onclick="show_a8();this.onclick=null;show_true(this)"><span id="a8">拒绝违章指挥、强令冒险作业 </span>
         &nbsp;<span><img id="a8_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">拒绝听从指挥</li>
     <li onclick="show_false(this)">紧急情况下撤离作业区域</li>
@@ -201,7 +206,7 @@
 <h4 class="Que-title">（9）依据《中华人民共和国安全生产法》，生产经营单位的<span id="a9_1">____</span>，必须按照国家有关规定经专门的安全作业培训，取得相应资格，方可上岗作业。</h4>
 <ol type="A">
     <li onclick="show_false(this)">安全生产管理人员</li>
-    <li onclick="show_a9();show_true(this)"><span id="a9">特种作业人员</span>
+    <li onclick="show_a9();this.onclick=null;show_true(this)"><span id="a9">特种作业人员</span>
         &nbsp;<span><img id="a9_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
     <li onclick="show_false(this)">新入厂的工人</li>
     <li onclick="show_false(this)">产品质量检验员</li>
@@ -223,7 +228,7 @@
     <li onclick="show_false(this)">采取一切技术手段抢险救灾</li>
     <li onclick="show_false(this)">自行判断安全风险</li>
     <li onclick="show_false(this)">在采取必要的个人防护措施后在现场静观事态变化</li>
-    <li onclick="show_a10();show_true(this)"><span id="a10">有权停止作业</span>
+    <li onclick="show_a10();this.onclick=null;show_true(this)"><span id="a10">有权停止作业</span>
         &nbsp;<span><img id="a10_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
 </ol>
 <script>
@@ -238,299 +243,2923 @@
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（11）依据《中华人民共和国安全生产法》，生产经营单位不得将生产经营项目、场所、设备发包或者出租给不具备<span id="a11_1">____</span>或者相应资质的单位或者个人。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">相应技术实力</li>
+    <li onclick="show_false(this)">相应资金储备</li>
+    <li onclick="show_a11();this.onclick=null;show_true(this)"><span id="a11">安全生产条件</span>
+        &nbsp;<span><img id="a11_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">相应市场规模</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a11(){i+=1;
+        document.getElementById('a11_1').innerText=document.getElementById("a11").innerText
+        document.getElementById('a11_1').style.color='green'
+        document.getElementById('a11_1').style.fontWeight='bold'
+        document.getElementById('a11_1').style.textDecoration='underline'
+        document.getElementById('a11_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（12）依据《中华人民共和国安全生产法》，生产经营单位应当建立安全风险<span id="a12_1">____</span>制度，按照安全风险分级采取相应的管控措施。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_a12();this.onclick=null;show_true(this)"><span id="a12">分级管控</span>
+        &nbsp;<span><img id="a12_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">各项措施</li>
+    <li onclick="show_false(this)">管控措施</li>
+    <li onclick="show_false(this)">分类指导</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a12(){i+=1;
+        document.getElementById('a12_1').innerText=document.getElementById("a12").innerText
+        document.getElementById('a12_1').style.color='green'
+        document.getElementById('a12_1').style.fontWeight='bold'
+        document.getElementById('a12_1').style.textDecoration='underline'
+        document.getElementById('a12_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（13）依据《中华人民共和国安全生产法》，安全生产工作应当以人为本，坚持<span id="a13_1">____</span>、生命至上，把保护人民生命安全摆在首位，树牢安全发展理念，坚持安全第一、预防为主、综合治理的方针，从源头上防范化解重大安全风险。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+     <li onclick="show_a13();this.onclick=null;show_true(this)"><span id="a13">人民至上</span>
+        &nbsp;<span><img id="a13_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全至上</li>
+    <li onclick="show_false(this)">国家利益至上</li>
+    <li onclick="show_false(this)">人民利益至上</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a13(){i+=1;
+        document.getElementById('a13_1').innerText=document.getElementById("a13").innerText
+        document.getElementById('a13_1').style.color='green'
+        document.getElementById('a13_1').style.fontWeight='bold'
+        document.getElementById('a13_1').style.textDecoration='underline'
+        document.getElementById('a13_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（14）依据《中华人民共和国安全生产法》，安全生产工作应当以人为本，坚持人民至上、生命至上，把<span id="a14_1">____</span>摆在首位，树牢安全发展理念，坚持安全第一、预防为主、综合治理的方针，从源头上防范化解重大安全风险。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">可以</li>
-    <li onclick="show_false(this)">经有关部门批准可以</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">不得</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">人民切身利益</li>
+    <li onclick="show_a14();this.onclick=null;show_true(this)"><span id="a14">保护人民生命安全</span>
+        &nbsp;<span><img id="a14_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">社会经济发展</li>
+    <li onclick="show_false(this)">人民的福祉</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a14(){i+=1;
+        document.getElementById('a14_1').innerText=document.getElementById("a14").innerText
+        document.getElementById('a14_1').style.color='green'
+        document.getElementById('a14_1').style.fontWeight='bold'
+        document.getElementById('a14_1').style.textDecoration='underline'
+        document.getElementById('a14_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（15）依据《中华人民共和国安全生产法》，安全生产工作应当以人为本，坚持人民至上、生命至上，把保护人民生命安全摆在首位，树牢安全发展理念，坚持安全第一、预防为主、综合治理的方针，<span id="a15_1">____</span>。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">防范安全风险</li> 
+    <li onclick="show_false(this)">防范化解安全风险 </li>
+    <li onclick="show_false(this)">防范化解重大安全风险</li>
+    <li onclick="show_a15();this.onclick=null;show_true(this)"><span id="a15">从源头上防范化解重大安全风险</span>
+        &nbsp;<span><img id="a15_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a15(){i+=1;
+        document.getElementById('a15_1').innerText=document.getElementById("a15").innerText
+        document.getElementById('a15_1').style.color='green'
+        document.getElementById('a15_1').style.fontWeight='bold'
+        document.getElementById('a15_1').style.textDecoration='underline'
+        document.getElementById('a15_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（16）依据《中华人民共和国安全生产法》，安全生产工作实行管行业必须管安全、管业务必须管安全、<span id="a16_1">____</span>，强化和落实生产经营单位主体责任与政府监管责任，建立生产经营单位负责、职工参与、政府监管、行业自律和社会监督的机制。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_a16();this.onclick=null;show_true(this)"><span id="a16">管生产经营必须管安全</span>
+        &nbsp;<span><img id="a16_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">管生产必须管安全</li>
+    <li onclick="show_false(this)">管经营必须管安全</li>
+    <li onclick="show_false(this)">管企业必须管安全</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a16(){i+=1;
+        document.getElementById('a16_1').innerText=document.getElementById("a16").innerText
+        document.getElementById('a16_1').style.color='green'
+        document.getElementById('a16_1').style.fontWeight='bold'
+        document.getElementById('a16_1').style.textDecoration='underline'
+        document.getElementById('a16_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（17）生产经营单位必须遵守《中华人民共和国安全生产法》和其他有关安全生产的法律、法规，加强安全生产管理，建立健全<span id="a17_1">____</span>和安全生产规章制度，加大对安全生产资金、物资、技术、人员的投入保障力度，改善安全生产条件，加强安全生产标准化、信息化建设，构建安全风险分级管控和隐患排查治理双重预防机制，健全风险防范化解机制，提高安全生产水平，确保安全生产。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">安全生产责任制</li>
+    <li onclick="show_a17();this.onclick=null;show_true(this)"><span id="a17">全员安全生产责任制</span>
+        &nbsp;<span><img id="a17_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全生产全过程责任制</li>
+    <li onclick="show_false(this)">责任制</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a17(){i+=1;
+        document.getElementById('a17_1').innerText=document.getElementById("a17").innerText
+        document.getElementById('a17_1').style.color='green'
+        document.getElementById('a17_1').style.fontWeight='bold'
+        document.getElementById('a17_1').style.textDecoration='underline'
+        document.getElementById('a17_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（18）生产经营单位必须遵守《中华人民共和国安全生产法》和其他有关安全生产的法律、法规，加强安全生产管理，建立健全全员安全生产责任制和<span id="a18_1">____</span>，加大对安全生产资金、物资、技术、人员的投入保障力度，改善安全生产条件，加强安全生产标准化、信息化建设，构建安全风险分级管控和隐患排查治理双重预防机制，健全风险防范化解机制，提高安全生产水平，确保安全生产。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">生产经营制度</li>
+    <li onclick="show_false(this)">主要负责人制度</li>
+    <li onclick="show_false(this)">安全生产操作规程</li>
+    <li onclick="show_a18();this.onclick=null;show_true(this)"><span id="a18">安全生产规章制度</span>
+        &nbsp;<span><img id="a18_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a18(){i+=1;
+        document.getElementById('a18_1').innerText=document.getElementById("a18").innerText
+        document.getElementById('a18_1').style.color='green'
+        document.getElementById('a18_1').style.fontWeight='bold'
+        document.getElementById('a18_1').style.textDecoration='underline'
+        document.getElementById('a18_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（19）生产经营单位必须遵守《中华人民共和国安全生产法》和其他有关安全生产的法律、法规，加强安全生产管理，建立健全全员安全生产责任制和安全生产规章制度，加大对<span id="a19_1">____</span>的投入保障力度，改善安全生产条件，加强安全生产标准化、信息化建设，构建安全风险分级管控和隐患排查治理双重预防机制，健全风险防范化解机制，提高安全生产水平，确保安全生产。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_a19();this.onclick=null;show_true(this)"><span id="a19">安全生产资金、物资、技术、人员</span>
+        &nbsp;<span><img id="a19_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全生产资金、物资、技术</li>
+    <li onclick="show_false(this)">安全生产物资、技术、人员</li>
+    <li onclick="show_false(this)">安全生产资金、技术、人员</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a19(){i+=1;
+        document.getElementById('a19_1').innerText=document.getElementById("a19").innerText
+        document.getElementById('a19_1').style.color='green'
+        document.getElementById('a19_1').style.fontWeight='bold'
+        document.getElementById('a19_1').style.textDecoration='underline'
+        document.getElementById('a19_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（20）生产经营单位必须遵守《中华人民共和国安全生产法》和其他有关安全生产的法律、法规，加强安全生产管理，建立健全全员安全生产责任制和安全生产规章制度，加大对安全生产资金、物资、技术、人员的投入保障力度，改善安全生产条件，加强<span id="a20_1">____</span>建设，构建安全风险分级管控和隐患排查治理双重预防机制，健全风险防范化解机制，提高安全生产水平，确保安全生产。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">基础设施</li>
+    <li onclick="show_a20();this.onclick=null;show_true(this)"><span id="a20">安全生产标准化、信息化</span>
+        &nbsp;<span><img id="a20_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全生产条件</li>
+    <li onclick="show_false(this)">安全生产制度</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a20(){i+=1;
+        document.getElementById('a20_1').innerText=document.getElementById("a20").innerText
+        document.getElementById('a20_1').style.color='green'
+        document.getElementById('a20_1').style.fontWeight='bold'
+        document.getElementById('a20_1').style.textDecoration='underline'
+        document.getElementById('a20_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（21）依据《中华人民共和国安全生产法》，县级以上地方各级人民政府应当组织有关部门建立完善安全风险评估与论证机制，按照安全风险管控要求，进行产业规划和空间布局，并对位置相邻、行业相近、业态相似的生产经营单位实施<span id="a21_1">____</span>。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">重点监管</li>
+    <li onclick="show_false(this)">联合检查</li>
+    <li onclick="show_a21();this.onclick=null;this.onclick=null;show_true(this)"><span id="a21">重大安全风险联防联控</span>
+        &nbsp;<span><img id="a21_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">全过程监管</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a21(){i+=1;
+        document.getElementById('a21_1').innerText=document.getElementById("a21").innerText
+        document.getElementById('a21_1').style.color='green'
+        document.getElementById('a21_1').style.fontWeight='bold'
+        document.getElementById('a21_1').style.textDecoration='underline'
+        document.getElementById('a21_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（22）依据《中华人民共和国安全生产法》，从业人员在作业过程中，应当严格落实<span id="a22_1">____</span>，遵守本单位的安全生产规章制度和操作规程，服从管理，正确佩戴和使用劳动防护用品。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">一岗双责</li>
+    <li onclick="show_a22();this.onclick=null;show_true(this)"><span id="a22">岗位安全责任</span>
+        &nbsp;<span><img id="a22_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全生产责任</li>
+    <li onclick="show_false(this)">规章制度</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a22(){i+=1;
+        document.getElementById('a22_1').innerText=document.getElementById("a22").innerText
+        document.getElementById('a22_1').style.color='green'
+        document.getElementById('a22_1').style.fontWeight='bold'
+        document.getElementById('a22_1').style.textDecoration='underline'
+        document.getElementById('a22_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（23）依据《中华人民共和国安全生产法》，负责事故调查处理的国务院有关部门和地方人民政府应当在批复事故调查报告后<span id="a23_1">____</span>内，组织有关部门对事故整改和防范措施落实情况进行评估，并及时向社会公开评估结果；对不履行职责导致事故整改和防范措施没有落实的有关单位和人员，应当按照有关规定追究责任。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_false(this)">半年</li>
+    <li onclick="show_a23();this.onclick=null;show_true(this)"><span id="a23">一年</span>
+        &nbsp;<span><img id="a23_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">两年</li>
+    <li onclick="show_false(this)">三个月</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a23(){i+=1;
+        document.getElementById('a23_1').innerText=document.getElementById("a23").innerText
+        document.getElementById('a23_1').style.color='green'
+        document.getElementById('a23_1').style.fontWeight='bold'
+        document.getElementById('a23_1').style.textDecoration='underline'
+        document.getElementById('a23_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
     }
 </script>
 <br>
 
-<h4 class="Que-title">(1)依据《中华人民共和国安全生产法》，从业人员在<span id="a1_1">____</span>人以下的非高危行业的生产经营单位，
-    可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</h4>
+<h4 class="Que-title">（24）在公交车行驶过程中，乘客王某因与驾驶员发生矛盾，遂殴打驾驶员并抢夺方向盘，造成其他乘客受轻微伤，依照《中华人民共和国刑法》，王某触犯了<span id="a24_1">____</span>罪。</h4>
 <ol type="A">
-    <li onclick="show_false(this)">200</li>
-    <li onclick="show_a1();show_true(this)"><span id="a1">100</span>
-        &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">500</li>
-    <li onclick="show_false(this)">l000</li>
+    <li onclick="show_a24();this.onclick=null;show_true(this)"><span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
 </ol>
 <script>
-    function show_a1(){i+=1;
-        document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
-        document.getElementById('a1_1').style.color='green'
-        document.getElementById('a1_1').style.fontWeight='bold'
-        document.getElementById('a1_1').style.textDecoration='underline'
-        document.getElementById('a1_2').style.display = "inline" 
+    function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
         document.getElementById('que_num').innerText= i
         if (i>169){i=169}}
 </script>
 <br>
+
+
+<h4 class="Que-title">（25）依据《中华人民共和国刑法》，公共交通工具的驾驶人员在行驶的公共交通工具上擅离职守，与他人互殴或者殴打他人，危及公共安全的，处<span id="a25_1">____</span>以下有期徒刑、拘役或者管制，并处或者单处罚金。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">两年</li>
+    <li onclick="show_a25();this.onclick=null;show_true(this)"><span id="a25">一年</span>
+        &nbsp;<span><img id="a25_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">三年</li>
+    <li onclick="show_false(this)">六个月</li>
+</ol>
+<script>
+    function show_a25(){i+=1;
+        document.getElementById('a25_1').innerText=document.getElementById("a25").innerText
+        document.getElementById('a25_1').style.color='green'
+        document.getElementById('a25_1').style.fontWeight='bold'
+        document.getElementById('a25_1').style.textDecoration='underline'
+        document.getElementById('a25_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（26）依据《中华人民共和国刑法》中有关危险驾驶罪的规定，下列情形中不属于危险驾驶罪的是<span id="a26_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">醉酒驾驶公交车</li>
+    <li onclick="show_false(this)">违反危险化学品安全管理规定运输危险化学品</li>
+    <li onclick="show_false(this)">大客车严重超载超速行驶</li>
+    <li onclick="show_a26();this.onclick=null;show_true(this)"><span id="a26">高速公路应急车道停车休息</span>
+        &nbsp;<span><img id="a26_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+    function show_a26(){i+=1;
+        document.getElementById('a26_1').innerText=document.getElementById("a26").innerText
+        document.getElementById('a26_1').style.color='green'
+        document.getElementById('a26_1').style.fontWeight='bold'
+        document.getElementById('a26_1').style.textDecoration='underline'
+        document.getElementById('a26_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（27）依据《中华人民共和国刑法》，在安全事故发生后，负有报告职责的人员<span id="a27_1">____</span>事故情况，贻误事故抢救，情节严重的，处三年以下有期徒刑或者拘役；情节特别严重的，处三年以上七年以下有期徒刑。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">不报或者迟报</li>
+    <li onclick="show_false(this)">迟报或者谎报</li>
+    <li onclick="show_a27();this.onclick=null;show_true(this)"><span id="a27">不报或者谎报</span>
+        &nbsp;<span><img id="a27_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">漏报或者迟报</li>
+</ol>
+<script>
+    function show_a27(){i+=1;
+        document.getElementById('a27_1').innerText=document.getElementById("a27").innerText
+        document.getElementById('a27_1').style.color='green'
+        document.getElementById('a27_1').style.fontWeight='bold'
+        document.getElementById('a27_1').style.textDecoration='underline'
+        document.getElementById('a27_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（28）依据《中华人民共和国消防法》，同一建筑物由两个以上单位管理或者使用的，应当明确各方的消防安全责任，并确定责任人对共用的<span id="a28_1">____</span>进行统一管理。</h4>
+<ol type="A">
+    <li onclick="show_a28();this.onclick=null;show_true(this)"><span id="a28">疏散通道、安全出口、建筑消防设施和消防车通道</span>
+        &nbsp;<span><img id="a28_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">灭火器材</li>
+    <li onclick="show_false(this)">消防档案</li>
+    <li onclick="show_false(this)">安全出口</li>
+</ol>
+<script>
+    function show_a28(){i+=1;
+        document.getElementById('a28_1').innerText=document.getElementById("a28").innerText
+        document.getElementById('a28_1').style.color='green'
+        document.getElementById('a28_1').style.fontWeight='bold'
+        document.getElementById('a28_1').style.textDecoration='underline'
+        document.getElementById('a28_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（29）依据《中华人民共和国消防法》，单位损坏、挪用或者擅自拆除、停用消防设施、器材的；责令改正，处<span id="a29_1">____</span>罚款。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">五百元以下</li>
+    <li onclick="show_a29();this.onclick=null;show_true(this)"><span id="a29">五千元以上五万元以下</span>
+        &nbsp;<span><img id="a29_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">一百万元以上</li>
+    <li onclick="show_false(this)">两千元以下</li>
+</ol>
+<script>
+    function show_a29(){i+=1;
+        document.getElementById('a29_1').innerText=document.getElementById("a29").innerText
+        document.getElementById('a29_1').style.color='green'
+        document.getElementById('a29_1').style.fontWeight='bold'
+        document.getElementById('a29_1').style.textDecoration='underline'
+        document.getElementById('a29_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（30）依据《中华人民共和国消防法》，我国消防工作贯彻<span id="a30_1">____</span>的方针。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">以消为主、防消结合</li>
+    <li onclick="show_a30();this.onclick=null;show_true(this)"><span id="a30">预防为主、防消结合</span>
+        &nbsp;<span><img id="a30_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">专门机关与群众相结合</li>
+    <li onclick="show_false(this)">以防为主、以消为辅</li>
+</ol>
+<script>
+    function show_a30(){i+=1;
+        document.getElementById('a30_1').innerText=document.getElementById("a30").innerText
+        document.getElementById('a30_1').style.color='green'
+        document.getElementById('a30_1').style.fontWeight='bold'
+        document.getElementById('a30_1').style.textDecoration='underline'
+        document.getElementById('a30_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（31）依据《中华人民共和国消防法》，我国的消防工作实行<span id="a31_1">____</span>责任制，建立健全社会化的消防工作网络。</h4>
+<ol type="A">
+    <li onclick="show_a31();this.onclick=null;show_true(this)"><span id="a31">消防安全</span>
+        &nbsp;<span><img id="a31_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">政府领导</li>
+    <li onclick="show_false(this)">消防监督</li>
+    <li onclick="show_false(this)">防火安全</li>
+</ol>
+<script>
+    function show_a31(){i+=1;
+        document.getElementById('a31_1').innerText=document.getElementById("a31").innerText
+        document.getElementById('a31_1').style.color='green'
+        document.getElementById('a31_1').style.fontWeight='bold'
+        document.getElementById('a31_1').style.textDecoration='underline'
+        document.getElementById('a31_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（32）依据《中华人民共和国消防法》，对建筑消防设施<span id="a32_1">____</span>至少进行一次全面检测，确保完好有效，检测记录应当完整准确，存档备查。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">每季度</li>
+    <li onclick="show_false(this)">每半年</li>
+    <li onclick="show_a32();this.onclick=null;show_true(this)"><span id="a32">每年</span>
+        &nbsp;<span><img id="a32_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">每月</li>
+</ol>
+<script>
+    function show_a32(){i+=1;
+        document.getElementById('a32_1').innerText=document.getElementById("a32").innerText
+        document.getElementById('a32_1').style.color='green'
+        document.getElementById('a32_1').style.fontWeight='bold'
+        document.getElementById('a32_1').style.textDecoration='underline'
+        document.getElementById('a32_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（33）依据《中华人民共和国消防法》，消防安全重点单位实行<span id="a33_1">____</span>防火巡查，并建立巡查记录。</h4>
+<ol type="A">
+    <li onclick="show_a33();this.onclick=null;show_true(this)"><span id="a33">每日</span>
+        &nbsp;<span><img id="a33_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">每小时</li>
+    <li onclick="show_false(this)">每两小时</li>
+    <li onclick="show_false(this)">每周</li>
+</ol>
+<script>
+    function show_a33(){i+=1;
+        document.getElementById('a33_1').innerText=document.getElementById("a33").innerText
+        document.getElementById('a33_1').style.color='green'
+        document.getElementById('a33_1').style.fontWeight='bold'
+        document.getElementById('a33_1').style.textDecoration='underline'
+        document.getElementById('a33_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（34）依据《中华人民共和国消防法》，<span id="a34_1">____</span>的场所不得与居住场所设置在同一建筑物内，并应当与居住场所保持安全距离。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">人员密集</li>
+    <li onclick="show_a34();this.onclick=null;show_true(this)"><span id="a34">生产、储存、经营易燃易爆危险品</span>
+        &nbsp;<span><img id="a34_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">公共娱乐</li>
+    <li onclick="show_false(this)">歌舞、 娱乐、 放映</li>
+</ol>
+<script>
+    function show_a34(){i+=1;
+        document.getElementById('a34_1').innerText=document.getElementById("a34").innerText
+        document.getElementById('a34_1').style.color='green'
+        document.getElementById('a34_1').style.fontWeight='bold'
+        document.getElementById('a34_1').style.textDecoration='underline'
+        document.getElementById('a34_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（35）依据《中华人民共和国消防法》，消防安全重点单位应当对<span id="a35_1">____</span>进行岗前消防安全培训，定期组织消防安全培训和消防演练。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">消防安全重点部位的职工</li>
+    <li onclick="show_false(this)">专职消防队员</li>
+    <li onclick="show_false(this)">安全员</li> 
+    <li onclick="show_a35();this.onclick=null;show_true(this)"><span id="a35">职工</span>
+        &nbsp;<span><img id="a35_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+    function show_a35(){i+=1;
+        document.getElementById('a35_1').innerText=document.getElementById("a35").innerText
+        document.getElementById('a35_1').style.color='green'
+        document.getElementById('a35_1').style.fontWeight='bold'
+        document.getElementById('a35_1').style.textDecoration='underline'
+        document.getElementById('a35_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（36）依据《中华人民共和国消防法》，单位的<span id="a36_1">____</span>是本单位的消防安全责任人。</h4>
+<ol type="A">
+    <li onclick="show_a36();this.onclick=null;show_true(this)"><span id="a36">主要负责人</span>
+        &nbsp;<span><img id="a36_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全管理人员</li>
+    <li onclick="show_false(this)">部门负责人</li>
+    <li onclick="show_false(this)">消防安全管理人</li>
+</ol>
+<script>
+    function show_a36(){i+=1;
+        document.getElementById('a36_1').innerText=document.getElementById("a36").innerText
+        document.getElementById('a36_1').style.color='green'
+        document.getElementById('a36_1').style.fontWeight='bold'
+        document.getElementById('a36_1').style.textDecoration='underline'
+        document.getElementById('a36_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（37）单位或者个人违反《中华人民共和国突发事件应对法》有关规定，不服从所在地人民政府及其有关部门发布的决定、命令或者不配合其依法采取的措施，构成违反治安管理行为的，<span id="a37_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">依法追究民事责任</li>
+    <li onclick="show_false(this)">依法追究赔偿责任</li>
+    <li onclick="show_false(this)">依法追究刑事责任</li>
+    <li onclick="show_a37();this.onclick=null;show_true(this)"><span id="a37">由公安机关依法给予处罚</span>
+        &nbsp;<span><img id="a37_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+    function show_a37(){i+=1;
+        document.getElementById('a37_1').innerText=document.getElementById("a37").innerText
+        document.getElementById('a37_1').style.color='green'
+        document.getElementById('a37_1').style.fontWeight='bold'
+        document.getElementById('a37_1').style.textDecoration='underline'
+        document.getElementById('a37_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（38）依据《中华人民共和国突发事件应对法》，突发事件是指突然发生，造成或者可能造成严重社会危害，需要采取应急处置措施予以应对的自然灾害、<span id="a38_1">____</span>、公共卫生事件和社会安全事件。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">交通拥堵</li>
+    <li onclick="show_a38();this.onclick=null;show_true(this)"><span id="a38">事故灾难</span>
+        &nbsp;<span><img id="a38_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">群众集会</li>
+    <li onclick="show_false(this)">交通灾害</li>
+</ol>
+<script>
+    function show_a38(){i+=1;
+        document.getElementById('a38_1').innerText=document.getElementById("a38").innerText
+        document.getElementById('a38_1').style.color='green'
+        document.getElementById('a38_1').style.fontWeight='bold'
+        document.getElementById('a38_1').style.textDecoration='underline'
+        document.getElementById('a38_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（39）依据《中华人民共和国突发事件应对法》，突发事件的工作原则是<span id="a39_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">处置为主、预防为辅</li>
+    <li onclick="show_a39();this.onclick=null;show_true(this)"><span id="a39">预防为主、预防与应急相结合</span>
+        &nbsp;<span><img id="a39_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">预防为主、处置为辅</li>
+    <li onclick="show_false(this)">处置与预防并重</li>
+</ol>
+<script>
+    function show_a39(){i+=1;
+        document.getElementById('a39_1').innerText=document.getElementById("a39").innerText
+        document.getElementById('a39_1').style.color='green'
+        document.getElementById('a39_1').style.fontWeight='bold'
+        document.getElementById('a39_1').style.textDecoration='underline'
+        document.getElementById('a39_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（40）依据《中华人民共和国反恐怖主义法》，对航空器、列车、船舶、城市轨道车辆、<span id="a40_1">____</span>等公共交通运输工具，营运单位应当依照规定配备安保人员和相应设备、设施，加强安全检查和保卫工作。</h4>
+<ol type="A">
+    <li onclick="show_a40();this.onclick=null;show_true(this)"><span id="a40">公共电汽车</span>
+        &nbsp;<span><img id="a40_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">大巴车</li>
+    <li onclick="show_false(this)">中巴车</li>
+    <li onclick="show_false(this)">长途客运汽车</li>
+</ol>
+<script>
+    function show_a40(){i+=1;
+        document.getElementById('a40_1').innerText=document.getElementById("a40").innerText
+        document.getElementById('a40_1').style.color='green'
+        document.getElementById('a40_1').style.fontWeight='bold'
+        document.getElementById('a40_1').style.textDecoration='underline'
+        document.getElementById('a40_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（41）依据《中华人民共和国反恐怖主义法》，对航空器、列车、船舶、城市轨道车辆、公共电汽车等公共交通运输工具，营运单位应当依照规定配备<span id="a41_1">____</span>，加强安全检查和保卫工作。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">充足的灭火器</li>
+    <li onclick="show_a41();this.onclick=null;show_true(this)"><span id="a41">安保人员和相应设备、设施</span>
+        &nbsp;<span><img id="a41_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">司乘人员</li>
+    <li onclick="show_false(this)">宣传资料</li>
+</ol>
+<script>
+    function show_a41(){i+=1;
+        document.getElementById('a41_1').innerText=document.getElementById("a41").innerText
+        document.getElementById('a41_1').style.color='green'
+        document.getElementById('a41_1').style.fontWeight='bold'
+        document.getElementById('a41_1').style.textDecoration='underline'
+        document.getElementById('a41_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（42）《中华人民共和国反恐怖主义法》规定所称的恐怖活动组织，是指<span id="a42_1">____</span>人以上为实施恐怖活动而组成的犯罪组织。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">十</li>
+    <li onclick="show_false(this)">四</li>
+    <li onclick="show_false(this)">五</li>
+    <li onclick="show_a42();this.onclick=null;show_true(this)"><span id="a42">三</span>
+        &nbsp;<span><img id="a42_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+    function show_a42(){i+=1;
+        document.getElementById('a42_1').innerText=document.getElementById("a42").innerText
+        document.getElementById('a42_1').style.color='green'
+        document.getElementById('a42_1').style.fontWeight='bold'
+        document.getElementById('a42_1').style.textDecoration='underline'
+        document.getElementById('a42_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（43）依据《中华人民共和国民法典》，承运人应当<span id="a43_1">____</span>，及时告知旅客安全运输应当注意的事项。旅客对承运人为安全运输所作的合理安排应当积极协助和配合。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">履行公平义务</li>
+    <li onclick="show_false(this)">履行公开义务</li>
+    <li onclick="show_false(this)">履行平等义务</li>
+    <li onclick="show_a43();this.onclick=null;show_true(this)"><span id="a43">严格履行安全运输义务</span>
+        &nbsp;<span><img id="a43_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+    function show_a43(){i+=1;
+        document.getElementById('a43_1').innerText=document.getElementById("a43").innerText
+        document.getElementById('a43_1').style.color='green'
+        document.getElementById('a43_1').style.fontWeight='bold'
+        document.getElementById('a43_1').style.textDecoration='underline'
+        document.getElementById('a43_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（44）依据《中华人民共和国民法典》，行为人因过错侵害他人民事权益造成损害的，<span id="a44_1">____</span>承担侵权责任。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">禁止</li>
+    <li onclick="show_a44();this.onclick=null;show_true(this)"><span id="a44">应当</span>
+        &nbsp;<span><img id="a44_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">可以</li>
+    <li onclick="show_false(this)">不需要</li>
+</ol>
+<script>
+    function show_a44(){i+=1;
+        document.getElementById('a44_1').innerText=document.getElementById("a44").innerText
+        document.getElementById('a44_1').style.color='green'
+        document.getElementById('a44_1').style.fontWeight='bold'
+        document.getElementById('a44_1').style.textDecoration='underline'
+        document.getElementById('a44_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（45）依据《中华人民共和国民法典》，承租人应当妥善保管租赁物，因保管不善造成租赁物毁损、灭失的，应当承担<span id="a45_1">____</span>责任。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">刑事</li>
+    <li onclick="show_a45();this.onclick=null;show_true(this)" ><span id="a45">赔偿</span>
+        &nbsp;<span><img id="a45_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">行政</li>
+    <li onclick="show_false(this)">治安</li>
+</ol>
+<script>
+    function show_a45(){i+=1;
+        document.getElementById('a45_1').innerText=document.getElementById("a45").innerText
+        document.getElementById('a45_1').style.color='green'
+        document.getElementById('a45_1').style.fontWeight='bold'
+        document.getElementById('a45_1').style.textDecoration='underline'
+        document.getElementById('a45_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（46）依据《中华人民共和国职业病防治法》，
+    <span id="a46_1">____</span>应当为劳动者创造符合国家职业卫生标准和卫生要求的工作环境和条件，并采取措施保障劳动者获得职业卫生保护。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">各级工会组织</li>
+    <li onclick="show_a46();this.onclick=null;show_true(this)">
+    <span id="a46">用人单位</span> &nbsp;<span><img id="a46_2" src="./images/yes.png" 
+        height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">各级政府</li>
+    <li onclick="show_false(this)">负责人</li>
+</ol>
+<script>
+ function show_a46(){i+=1;
+        document.getElementById('a46_1').innerText=document.getElementById("a46").innerText
+        document.getElementById('a46_1').style.color='green'
+        document.getElementById('a46_1').style.fontWeight='bold'
+        document.getElementById('a46_1').style.textDecoration='underline'
+        document.getElementById('a46_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（47）依据《中华人民共和国职业病防治法》，在职业病防治方面用人单位必须依法参加
+    <span id="a47_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">失业保险</li>
+    <li onclick="show_false(this)">意外保险</li> 
+    <li onclick="show_a47();this.onclick=null;show_true(this)">
+    <span id="a47">工伤保险</span>
+        &nbsp;<span><img id="a47_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">养老保险</li>
+</ol>
+<script>
+ function show_a47(){i+=1;
+        document.getElementById('a47_1').innerText=document.getElementById("a47").innerText
+        document.getElementById('a47_1').style.color='green'
+        document.getElementById('a47_1').style.fontWeight='bold'
+        document.getElementById('a47_1').style.textDecoration='underline'
+        document.getElementById('a47_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（48）依据《中华人民共和国劳动法》中有关职业培训的规定，以下选项表述<u>不正确</u>的是
+    <span id="a48_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_a48();this.onclick=null;show_true(this)">
+    <span id="a48">从事技术工种的劳动者，上岗前可以视情参加培训</span>
+        &nbsp;<span><img id="a48_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">各级人民政府应当把发展职业培训纳入社会经济发展的规划，鼓励和支持有条件的企业、事业组织、社会团体和个人进行各种形式的职业培训</li>
+    <li onclick="show_false(this)">用人单位应当建立职业培训制度，按照国家规定提取和使用职业培训经费，根据本单位实际，有计划地对劳动者进行职业培训</li>
+    <li onclick="show_false(this)">国家确定职业分类，并对规定的职业实行职业资格证书制度</li>
+</ol>
+<script>
+ function show_a48(){i+=1;
+        document.getElementById('a48_1').innerText=document.getElementById("a48").innerText
+        document.getElementById('a48_1').style.color='green'
+        document.getElementById('a48_1').style.fontWeight='bold'
+        document.getElementById('a48_1').style.textDecoration='underline'
+        document.getElementById('a48_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title"><a name="50">（49）依据《中华人民共和国治安管理处罚法》，非法携带枪支、弹药或者弩、匕首等国家规定的管制器具进入公共场所或者公共交通工具的，处
+    <span id="a49_1">____</span>拘留，可以并处五百元以下罚款。</a></h4>
+<ol type="A">
+    <li onclick="show_false(this)">五日</li>
+    <li onclick="show_false(this)">十日</li>
+    <li onclick="show_a49();this.onclick=null;show_true(this)">
+    <span id="a49">五日以上十日以下</span>
+        &nbsp;<span><img id="a49_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">十五日</li>
+</ol>
+<script>
+ function show_a49(){i+=1;
+        document.getElementById('a49_1').innerText=document.getElementById("a49").innerText
+        document.getElementById('a49_1').style.color='green'
+        document.getElementById('a49_1').style.fontWeight='bold'
+        document.getElementById('a49_1').style.textDecoration='underline'
+        document.getElementById('a49_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（50）依据《生产安全事故报告和调查处理条例》，一般事故的死亡人数划分标准是
+    <span id="a50_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">3人以上10人以下</li>
+    <li onclick="show_false(this)">30人以上</li>
+    <li onclick="show_a50();this.onclick=null;show_true(this)">
+    <span id="a50">3人以下</span>
+        &nbsp;<span><img id="a50_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">10人以上30人以下</li>
+</ol>
+<script>
+ function show_a50(){i+=1;
+        document.getElementById('a50_1').innerText=document.getElementById("a50").innerText
+        document.getElementById('a50_1').style.color='green'
+        document.getElementById('a50_1').style.fontWeight='bold'
+        document.getElementById('a50_1').style.textDecoration='underline'
+        document.getElementById('a50_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（51）依据《生产安全事故报告和调查处理条例》，以下选项中不属于事故调查处理需要进行的活动的是
+    <span id="a51_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">及时、准确地查清事故经过、事故原因和事故损失</li>
+    <li onclick="show_false(this)">查明事故性质，认定事故责任</li>
+    <li onclick="show_false(this)">总结事故教训，提出整改措施</li>
+    <li onclick="show_a51();this.onclick=null;show_true(this)">
+    <span id="a51">对事故责任相关人员进行培训教育</span>
+        &nbsp;<span><img id="a51_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a51(){i+=1;
+        document.getElementById('a51_1').innerText=document.getElementById("a51").innerText
+        document.getElementById('a51_1').style.color='green'
+        document.getElementById('a51_1').style.fontWeight='bold'
+        document.getElementById('a51_1').style.textDecoration='underline'
+        document.getElementById('a51_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（52）依据《生产安全事故报告和调查处理条例》，道路交通事故、火灾事故自发生之日起
+    <span id="a52_1">____</span>日内，事故造成的伤亡人数发生变化的，应当及时补报。</h4>
+<ol type="A">
+    <li onclick="show_a52();this.onclick=null;show_true(this)">
+    <span id="a52">7</span>
+        &nbsp;<span><img id="a52_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">10</li>
+    <li onclick="show_false(this)">15</li>
+    <li onclick="show_false(this)">30</li>
+</ol>
+<script>
+ function show_a52(){i+=1;
+        document.getElementById('a52_1').innerText=document.getElementById("a52").innerText
+        document.getElementById('a52_1').style.color='green'
+        document.getElementById('a52_1').style.fontWeight='bold'
+        document.getElementById('a52_1').style.textDecoration='underline'
+        document.getElementById('a52_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（53）依据《生产安全事故应急条例》，生产经营单位应当针对本单位可能发生的生产安全事故的特点和危害，进行风险辨识和评估，制定相应的生产安全事故应急救援预案，并向本单位
+    <span id="a53_1">____</span>公布。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">管理人员</li>
+    <li onclick="show_false(this)">安全员</li>
+    <li onclick="show_a53();this.onclick=null;show_true(this)">
+    <span id="a53">从业人员</span>
+        &nbsp;<span><img id="a53_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">消防人员</li>
+</ol>
+<script>
+ function show_a53(){i+=1;
+        document.getElementById('a53_1').innerText=document.getElementById("a53").innerText
+        document.getElementById('a53_1').style.color='green'
+        document.getElementById('a53_1').style.fontWeight='bold'
+        document.getElementById('a53_1').style.textDecoration='underline'
+        document.getElementById('a53_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（54）依据《生产安全事故应急条例》，县级以上地方人民政府以及县级以上人民政府负有安全生产监督管理职责的部门，乡、镇人民政府以及街道办事处等地方人民政府派出机关，应当至少每
+    <span id="a54_1">____</span>年组织1次生产安全事故应急救援预案演练。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">4</li>
+    <li onclick="show_false(this)">3</li>
+    <li onclick="show_a54();this.onclick=null;show_true(this)">
+    <span id="a54">2</span>
+        &nbsp;<span><img id="a54_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">1</li>
+</ol>
+<script>
+ function show_a54(){i+=1;
+        document.getElementById('a54_1').innerText=document.getElementById("a54").innerText
+        document.getElementById('a54_1').style.color='green'
+        document.getElementById('a54_1').style.fontWeight='bold'
+        document.getElementById('a54_1').style.textDecoration='underline'
+        document.getElementById('a54_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（55）依据《生产安全事故应急条例》，规模较大、危险性较高的易燃易爆物品、危险化学品等危险物品的生产、经营、储存、运输单位应当成立应急处置技术组，实行
+    <span id="a55_1">____</span>小时应急值班。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">8</li>
+    <li onclick="show_false(this)">12</li>
+    <li onclick="show_false(this)">18</li>
+    <li onclick="show_a55();this.onclick=null;show_true(this)">
+    <span id="a55">24</span>
+        &nbsp;<span><img id="a55_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a55(){i+=1;
+        document.getElementById('a55_1').innerText=document.getElementById("a55").innerText
+        document.getElementById('a55_1').style.color='green'
+        document.getElementById('a55_1').style.fontWeight='bold'
+        document.getElementById('a55_1').style.textDecoration='underline'
+        document.getElementById('a55_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（56）依据《生产安全事故应急条例》，易燃易爆物品、危险化学品等危险物品的生产、经营、储存、运输单位，矿山、金属冶炼、城市轨道交通运营、建筑施工单位，以及宾馆、商场、娱乐场所、旅游景区等人员密集场所经营单位，应当至少每
+    <span id="a56_1">____</span>组织1次生产安全事故应急救援预案演练，并将演练情况报送所在地县级以上地方人民政府负有安全生产监督管理职责的部门。</h4>
+<ol type="A">
+    <li onclick="show_a56();this.onclick=null;show_true(this)">
+    <span id="a56">半年</span>
+        &nbsp;<span><img id="a56_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">1年</li>
+    <li onclick="show_false(this)">2年</li>
+    <li onclick="show_false(this)">3年</li>
+</ol>
+<script>
+ function show_a56(){i+=1;
+        document.getElementById('a56_1').innerText=document.getElementById("a56").innerText
+        document.getElementById('a56_1').style.color='green'
+        document.getElementById('a56_1').style.fontWeight='bold'
+        document.getElementById('a56_1').style.textDecoration='underline'
+        document.getElementById('a56_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（57）依据《中共中央 国务院关于推进安全生产领域改革发展的意见》，企业实行全员安全生产责任制度，企业的安全生产第一责任人是
+    <span id="a57_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">技术管理负责人</li>
+    <li onclick="show_false(this)">安全管理负责人</li>
+    <li onclick="show_false(this)">企业董事会</li>
+    <li onclick="show_a57();this.onclick=null;show_true(this)">
+    <span id="a57">法定代表人和实际控制人</span>
+        &nbsp;<span><img id="a57_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a57(){i+=1;
+        document.getElementById('a57_1').innerText=document.getElementById("a57").innerText
+        document.getElementById('a57_1').style.color='green'
+        document.getElementById('a57_1').style.fontWeight='bold'
+        document.getElementById('a57_1').style.textDecoration='underline'
+        document.getElementById('a57_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（58）依据《中共中央 国务院关于推进安全生产领域改革发展的意见》，
+    <span id="a58_1">____</span>对本单位安全生产和职业健康工作负全面责任。</h4>
+<ol type="A">
+    <li onclick="show_a58();this.onclick=null;show_true(this)">
+    <span id="a58">企业</span>
+        &nbsp;<span><img id="a58_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">地方党委</li>
+    <li onclick="show_false(this)">地方政府</li>
+    <li onclick="show_false(this)">安全生产监督管理部门</li>
+</ol>
+<script>
+ function show_a58(){i+=1;
+        document.getElementById('a58_1').innerText=document.getElementById("a58").innerText
+        document.getElementById('a58_1').style.color='green'
+        document.getElementById('a58_1').style.fontWeight='bold'
+        document.getElementById('a58_1').style.textDecoration='underline'
+        document.getElementById('a58_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（59）依据《中共中央 国务院关于推进安全生产领域改革发展的意见》，安全生产的方针是
+    <span id="a59_1">____</span>，加强领导、改革创新，协调联动、齐抓共管。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">预防为主、防治结合、综合治理</li>
+    <li onclick="show_a59();this.onclick=null;show_true(this)">
+    <span id="a59">安全第一、预防为主、综合治理</span>
+        &nbsp;<span><img id="a59_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全第一、风险管控、隐患排查</li>
+    <li onclick="show_false(this)">依法监管、源头防范、综合治理</li>
+</ol>
+<script>
+ function show_a59(){i+=1;
+        document.getElementById('a59_1').innerText=document.getElementById("a59").innerText
+        document.getElementById('a59_1').style.color='green'
+        document.getElementById('a59_1').style.fontWeight='bold'
+        document.getElementById('a59_1').style.textDecoration='underline'
+        document.getElementById('a59_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（60）依据《中共中央 国务院关于推进安全生产领域改革发展的意见》，以下关于企业安全生产说法错误的是
+    <span id="a60_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">企业对本单位安全生产和职业健康工作负全面责任，要严格履行安全生产法定责任，建立健全自我约束、持续改进的内生机制</li>
+    <li onclick="show_false(this)">建立企业全过程安全生产和职业健康管理制度，做到安全责任、管理、投入、培训和应急救援“五到位”</li>
+    <li onclick="show_a60();this.onclick=null;show_true(this)">
+    <span id="a60">落实企业安全生产责任制度，安全管理人员为安全生产第一责任人，主要技术负责人负有安全生产技术决策和指挥权</span>
+        &nbsp;<span><img id="a60_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">国有企业要发挥安全生产工作示范带头作用，自觉接受属地监管</li>
+</ol>
+<script>
+ function show_a60(){i+=1;
+        document.getElementById('a60_1').innerText=document.getElementById("a60").innerText
+        document.getElementById('a60_1').style.color='green'
+        document.getElementById('a60_1').style.fontWeight='bold'
+        document.getElementById('a60_1').style.textDecoration='underline'
+        document.getElementById('a60_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（61）依据《生产安全事故应急预案管理办法》，生产经营单位
+    <span id="a61_1">____</span>负责组织编制和实施本单位的应急预案，并对应急预案的真实性和实用性负责。</h4>
+<ol type="A">
+    <li onclick="show_a61();this.onclick=null;show_true(this)">
+    <span id="a61">主要负责人</span>
+        &nbsp;<span><img id="a61_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全总监</li>
+    <li onclick="show_false(this)">安全管理人员</li>
+    <li onclick="show_false(this)">总工程师</li>
+</ol>
+<script>
+ function show_a61(){i+=1;
+        document.getElementById('a61_1').innerText=document.getElementById("a61").innerText
+        document.getElementById('a61_1').style.color='green'
+        document.getElementById('a61_1').style.fontWeight='bold'
+        document.getElementById('a61_1').style.textDecoration='underline'
+        document.getElementById('a61_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（62）依据《生产安全事故应急预案管理办法》，生产经营单位<u>风险种类多、可能发生多种类型事故的</u>，应当组织编制
+    <span id="a62_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_a62();this.onclick=null;show_true(this)">
+    <span id="a62">综合应急预案</span>
+        &nbsp;<span><img id="a62_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">应急演练预案</li>
+    <li onclick="show_false(this)">专项应急预案</li>
+    <li onclick="show_false(this)">现场工作方案</li>
+</ol>
+<script>
+ function show_a62(){i+=1;
+        document.getElementById('a62_1').innerText=document.getElementById("a62").innerText
+        document.getElementById('a62_1').style.color='green'
+        document.getElementById('a62_1').style.fontWeight='bold'
+        document.getElementById('a62_1').style.textDecoration='underline'
+        document.getElementById('a62_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（63）依据《生产安全事故应急预案管理办法》，对于<u>危险性较大的场所、装置或者设施</u>，生产经营单位应当编制
+    <span id="a63_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">安全工作方案</li>
+    <li onclick="show_false(this)">应急演练预案</li>
+    <li onclick="show_false(this)">安全管理制度</li>
+    <li onclick="show_a63();this.onclick=null;show_true(this)">
+    <span id="a63">现场处置方案</span>
+        &nbsp;<span><img id="a63_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a63(){i+=1;
+        document.getElementById('a63_1').innerText=document.getElementById("a63").innerText
+        document.getElementById('a63_1').style.color='green'
+        document.getElementById('a63_1').style.fontWeight='bold'
+        document.getElementById('a63_1').style.textDecoration='underline'
+        document.getElementById('a63_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（64）依据《生产安全事故应急预案管理办法》，生产经营单位应当在编制应急预案的基础上，针对工作场所、岗位的特点，编制简明、实用、有效的
+    <span id="a64_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">应急处置手册</li>
+    <li onclick="show_false(this)">应急处置口诀</li> 
+    <li onclick="show_a64();this.onclick=null;show_true(this)">
+    <span id="a64">应急处置卡</span>
+        &nbsp;<span><img id="a64_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">工作手册</li>
+</ol>
+<script>
+ function show_a64(){i+=1;
+        document.getElementById('a64_1').innerText=document.getElementById("a64").innerText
+        document.getElementById('a64_1').style.color='green'
+        document.getElementById('a64_1').style.fontWeight='bold'
+        document.getElementById('a64_1').style.textDecoration='underline'
+        document.getElementById('a64_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（65）依据《生产安全事故应急预案管理办法》，生产经营单位的应急预案经评审或者论证后，由
+    <span id="a65_1">____</span>签署，向本单位从业人员公布，并及时发放到本单位有关部门、岗位和相关应急救援队伍。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">本单位技术负责人</li>
+    <li onclick="show_a65();this.onclick=null;show_true(this)">
+    <span id="a65">本单位主要负责人</span>
+        &nbsp;<span><img id="a65_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">本单位安全负责人</li>
+    <li onclick="show_false(this)">本单位预案编制人员</li>
+</ol>
+<script>
+ function show_a65(){i+=1;
+        document.getElementById('a65_1').innerText=document.getElementById("a65").innerText
+        document.getElementById('a65_1').style.color='green'
+        document.getElementById('a65_1').style.fontWeight='bold'
+        document.getElementById('a65_1').style.textDecoration='underline'
+        document.getElementById('a65_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（66）据《生产安全事故应急预案管理办法》，易燃易爆物品、危险化学品等危险物品的生产、经营、储存、运输单位，矿山、金属冶炼、城市轨道交通运营、建筑施工单位，以及宾馆、商场、娱乐场所、旅游景区等人员密集场所经营单位，应当在应急预案公布之日起
+    <span id="a66_1">____</span>个工作日内，按照分级属地原则，向县级以上人民政府应急管理部门和其他负有安全生产监督管理职责的部门进行备案，并依法向社会公布。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">15</li> 
+    <li onclick="show_a66();this.onclick=null;show_true(this)">
+    <span id="a66">20</span>
+        &nbsp;<span><img id="a66_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">30</li>
+    <li onclick="show_false(this)">45</li>
+</ol>
+<script>
+ function show_a66(){i+=1;
+        document.getElementById('a66_1').innerText=document.getElementById("a66").innerText
+        document.getElementById('a66_1').style.color='green'
+        document.getElementById('a66_1').style.fontWeight='bold'
+        document.getElementById('a66_1').style.textDecoration='underline'
+        document.getElementById('a66_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（67）依据《生产安全事故应急预案管理办法》，矿山、金属冶炼、建筑施工企业和易燃易爆物品、危险化学品等危险物品的生产、经营、储存、运输企业、使用危险化学品达到国家规定数量的化工企业、烟花爆竹生产、批发经营企业和中型规模以上的其他生产经营单位，应当每
+    <span id="a67_1">____</span>进行一次应急预案评估。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">半年</li>
+    <li onclick="show_false(this)">一年</li>
+    <li onclick="show_false(this)">两年</li> 
+    <li onclick="show_a67();this.onclick=null;show_true(this)">
+    <span id="a67">三年</span>
+        &nbsp;<span><img id="a67_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a67(){i+=1;
+        document.getElementById('a67_1').innerText=document.getElementById("a67").innerText
+        document.getElementById('a67_1').style.color='green'
+        document.getElementById('a67_1').style.fontWeight='bold'
+        document.getElementById('a67_1').style.textDecoration='underline'
+        document.getElementById('a67_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（68）依据《交通运输突发事件应急管理规定》，交通运输主管部门、交通运输企业应当建立
+    <span id="a68_1">____</span>，根据交通运输突发事件的种类、特点和实际需要，配备必要值班设施和人员。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">领导带班制度</li>
+    <li onclick="show_false(this)">应急管理人员责任制</li>
+    <li onclick="show_false(this)">应急救援队伍</li>
+    <li onclick="show_a68();this.onclick=null;show_true(this)">
+    <span id="a68">应急值班制度</span>
+        &nbsp;<span><img id="a68_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a68(){i+=1;
+        document.getElementById('a68_1').innerText=document.getElementById("a68").innerText
+        document.getElementById('a68_1').style.color='green'
+        document.getElementById('a68_1').style.fontWeight='bold'
+        document.getElementById('a68_1').style.textDecoration='underline'
+        document.getElementById('a68_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（69）依据《交通运输突发事件应急管理规定》，交通运输企业应当根据实际需要，建立由
+    <span id="a69_1">____</span>组成的专职或者兼职应急队伍。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">本单位安全负责人</li>
+    <li onclick="show_a69();this.onclick=null;show_true(this)">
+    <span id="a69">本单位职工</span>
+        &nbsp;<span><img id="a69_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">单位负责人</li>
+    <li onclick="show_false(this)">本单位安全员</li>
+</ol>
+<script>
+ function show_a69(){i+=1;
+        document.getElementById('a69_1').innerText=document.getElementById("a69").innerText
+        document.getElementById('a69_1').style.color='green'
+        document.getElementById('a69_1').style.fontWeight='bold'
+        document.getElementById('a69_1').style.textDecoration='underline'
+        document.getElementById('a69_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（70）据《企业安全生产费用提取和使用管理办法》，从事客运业务的交通运输企业以上年度实际营业收入为计提依据，按照
+    <span id="a70_1">____</span>的标准平均逐月提取。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">2%</li>
+    <li onclick="show_false(this)">0.5%</li>
+    <li onclick="show_false(this)">1%</li>
+    <li onclick="show_a70();this.onclick=null;show_true(this)">
+    <span id="a70">1.5%</span>
+        &nbsp;<span><img id="a70_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a70(){i+=1;
+        document.getElementById('a70_1').innerText=document.getElementById("a70").innerText
+        document.getElementById('a70_1').style.color='green'
+        document.getElementById('a70_1').style.fontWeight='bold'
+        document.getElementById('a70_1').style.textDecoration='underline'
+        document.getElementById('a70_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（71）依据《企业安全生产费用提取和使用管理办法》，下列不属于交通运输企业安全生产费用使用范围的是
+    <span id="a71_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">企业安全生产宣传、教育、培训支出</li>
+    <li onclick="show_false(this)">安全设施及特种设备检测检验支出</li>
+    <li onclick="show_false(this)">完善、改造和维护安全防护设施设备支出</li>
+    <li onclick="show_a71();this.onclick=null;show_true(this)">
+    <span id="a71">新建、改建、扩建项目的安全评价支出</span>
+        &nbsp;<span><img id="a71_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a71(){i+=1;
+        document.getElementById('a71_1').innerText=document.getElementById("a71").innerText
+        document.getElementById('a71_1').style.color='green'
+        document.getElementById('a71_1').style.fontWeight='bold'
+        document.getElementById('a71_1').style.textDecoration='underline'
+        document.getElementById('a71_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（72）依据《企业安全生产费用提取和使用管理办法》，企业年度安全费用使用计划和上一年安全费用的提取、使用情况按照管理权限报同级相关管理部门
+    <span id="a72_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">留存</li>
+    <li onclick="show_false(this)">检查</li>
+    <li onclick="show_a72();this.onclick=null;show_true(this)">
+    <span id="a72">备案</span>
+        &nbsp;<span><img id="a72_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">审批</li>
+</ol>
+<script>
+ function show_a72(){i+=1;
+        document.getElementById('a72_1').innerText=document.getElementById("a72").innerText
+        document.getElementById('a72_1').style.color='green'
+        document.getElementById('a72_1').style.fontWeight='bold'
+        document.getElementById('a72_1').style.textDecoration='underline'
+        document.getElementById('a72_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（73）依据《机关、团体、企业、事业单位消防安全管理规定》，单位可以根据需要确定本单位的消防安全管理人。消防安全管理人对
+    <span id="a73_1">____</span>负责，实施和组织落实相关消防安全管理工作。</h4>
+<ol type="A">
+    <li onclick="show_a73();this.onclick=null;show_true(this)">
+    <span id="a73">单位的消防安全责任人</span>
+        &nbsp;<span><img id="a73_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">法定代表人</li>
+    <li onclick="show_false(this)">实际控制人</li>
+    <li onclick="show_false(this)">分管安全生产的领导</li>
+</ol>
+<script>
+ function show_a73(){i+=1;
+        document.getElementById('a73_1').innerText=document.getElementById("a73").innerText
+        document.getElementById('a73_1').style.color='green'
+        document.getElementById('a73_1').style.fontWeight='bold'
+        document.getElementById('a73_1').style.textDecoration='underline'
+        document.getElementById('a73_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（74）依据《机关、团体、企业、事业单位消防安全管理规定》，单位应当按照国家有关规定，结合本单位的特点，建立健全各项消防安全制度和
+    <span id="a74_1">____</span>，并公布执行。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">工作流程</li>
+    <li onclick="show_a74();this.onclick=null;show_true(this)">
+    <span id="a74">保障消防安全的操作规程</span>
+        &nbsp;<span><img id="a74_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">应急预案</li>
+    <li onclick="show_false(this)">操作技术指南</li>
+</ol>
+<script>
+ function show_a74(){i+=1;
+        document.getElementById('a74_1').innerText=document.getElementById("a74").innerText
+        document.getElementById('a74_1').style.color='green'
+        document.getElementById('a74_1').style.fontWeight='bold'
+        document.getElementById('a74_1').style.textDecoration='underline'
+        document.getElementById('a74_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（75）依据《机关、团体、企业、事业单位消防安全管理规定》，机关、团体、事业单位应当至少每季度进行一次防火检查，其他单位应当至少
+    <span id="a75_1">____</span>进行一次防火检查。</h4>
+<ol type="A">
+    <li onclick="show_a75();this.onclick=null;show_true(this)">
+    <span id="a75">每月</span>
+        &nbsp;<span><img id="a75_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">每两周</li>
+    <li onclick="show_false(this)">每周</li>
+    <li onclick="show_false(this)">每两个月</li>
+</ol>
+<script>
+ function show_a75(){i+=1;
+        document.getElementById('a75_1').innerText=document.getElementById("a75").innerText
+        document.getElementById('a75_1').style.color='green'
+        document.getElementById('a75_1').style.fontWeight='bold'
+        document.getElementById('a75_1').style.textDecoration='underline'
+        document.getElementById('a75_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（76）依据《机关、团体、企业、事业单位消防安全管理规定》，单位对存在的火灾隐患，应当及时予以
+    <span id="a76_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">识别</li>
+    <li onclick="show_false(this)">记录</li>
+    <li onclick="show_false(this)">上报</li>
+    <li onclick="show_a76();this.onclick=null;show_true(this)">
+    <span id="a76">消除</span>
+        &nbsp;<span><img id="a76_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a76(){i+=1;
+        document.getElementById('a76_1').innerText=document.getElementById("a76").innerText
+        document.getElementById('a76_1').style.color='green'
+        document.getElementById('a76_1').style.fontWeight='bold'
+        document.getElementById('a76_1').style.textDecoration='underline'
+        document.getElementById('a76_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（77）依据《机关、团体、企业、事业单位消防安全管理规定》，单位应当通过多种形式开展经常性的消防安全宣传教育。消防安全重点单位对每名员工应当至少
+    <span id="a77_1">____</span>进行一次消防安全培训。</h4>
+<ol type="A">
+    <li onclick="show_a77();this.onclick=null;show_true(this)">
+    <span id="a77">每年</span>
+        &nbsp;<span><img id="a77_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">每半年</li>
+    <li onclick="show_false(this)">每季度</li>
+    <li onclick="show_false(this)">每两年</li>
+</ol>
+<script>
+ function show_a77(){i+=1;
+        document.getElementById('a77_1').innerText=document.getElementById("a77").innerText
+        document.getElementById('a77_1').style.color='green'
+        document.getElementById('a77_1').style.fontWeight='bold'
+        document.getElementById('a77_1').style.textDecoration='underline'
+        document.getElementById('a77_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（78）依据《机关、团体、企业、事业单位消防安全管理规定》，消防安全重点单位应当按照灭火和应急疏散预案，至少每半年进行一次演练，并结合实际，不断完善预案。其他单位应当结合本单位实际，参照制定相应的应急方案，至少
+    <span id="a78_1">____</span>组织一次演练。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">每半年</li>
+    <li onclick="show_a78();this.onclick=null;show_true(this)">
+    <span id="a78">每年</span>
+        &nbsp;<span><img id="a78_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">每季度</li>
+    <li onclick="show_false(this)">每两年</li>
+</ol>
+<script>
+ function show_a78(){i+=1;
+        document.getElementById('a78_1').innerText=document.getElementById("a78").innerText
+        document.getElementById('a78_1').style.color='green'
+        document.getElementById('a78_1').style.fontWeight='bold'
+        document.getElementById('a78_1').style.textDecoration='underline'
+        document.getElementById('a78_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（79）依据《交通运输企业安全生产标准化建设基本规范》，安全生产标准化的建设，应当以
+    <span id="a79_1">____</span>为核心。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">双重预防工作机制</li>
+    <li onclick="show_false(this)">有效防范化解</li>
+    <li onclick="show_a79();this.onclick=null;show_true(this)">
+    <span id="a79">安全生产责任制</span>
+        &nbsp;<span><img id="a79_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">预防事故发生</li>
+</ol>
+<script>
+ function show_a79(){i+=1;
+        document.getElementById('a79_1').innerText=document.getElementById("a79").innerText
+        document.getElementById('a79_1').style.color='green'
+        document.getElementById('a79_1').style.fontWeight='bold'
+        document.getElementById('a79_1').style.textDecoration='underline'
+        document.getElementById('a79_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（80）依据《消防安全责任制实施办法》，机关、团体、企业、事业等单位是消防安全的责任主体，
+    <span id="a80_1">____</span>是本单位、本场所消防安全责任人，对本单位、本场所消防安全全面负责。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">安全生产管理人员</li>
+    <li onclick="show_false(this)">部门负责人</li>
+    <li onclick="show_false(this)">班组组长</li>
+    <li onclick="show_a80();this.onclick=null;show_true(this)">
+    <span id="a80">法定代表人、主要负责人或实际控制人</span>
+        &nbsp;<span><img id="a80_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+</ol>
+<script>
+ function show_a80(){i+=1;
+        document.getElementById('a80_1').innerText=document.getElementById("a80").innerText
+        document.getElementById('a80_1').style.color='green'
+        document.getElementById('a80_1').style.fontWeight='bold'
+        document.getElementById('a80_1').style.textDecoration='underline'
+        document.getElementById('a80_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（81）依据《消防安全责任制实施办法》，因消防安全责任不落实发生
+    <span id="a81_1">____</span>火灾事故的，依法依规追究单位直接责任人、法定代表人、主要负责人或实际控制人的责任，对履行职责不力、失职渎职的政府及有关部门负责人和工作人员实行问责，涉嫌犯罪的，移送司法机关处理。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">较大</li>
+    <li onclick="show_false(this)">重大</li>
+    <li onclick="show_a81();this.onclick=null;show_true(this)">
+    <span id="a81">一般及以上</span>
+        &nbsp;<span><img id="a81_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">特大</li>
+</ol>
+<script>
+ function show_a81(){i+=1;
+        document.getElementById('a81_1').innerText=document.getElementById("a81").innerText
+        document.getElementById('a81_1').style.color='green'
+        document.getElementById('a81_1').style.fontWeight='bold'
+        document.getElementById('a81_1').style.textDecoration='underline'
+        document.getElementById('a81_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（82）以下选项<u>不属于</u>安全生产管理方针的是
+    <span id="a82_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">安全第一</li>
+    <li onclick="show_a82();this.onclick=null;show_true(this)">
+    <span id="a82">协调管理</span>
+        &nbsp;<span><img id="a82_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">预防为主</li>
+    <li onclick="show_false(this)">综合治理</li>
+</ol>
+<script>
+ function show_a82(){i+=1;
+        document.getElementById('a82_1').innerText=document.getElementById("a82").innerText
+        document.getElementById('a82_1').style.color='green'
+        document.getElementById('a82_1').style.fontWeight='bold'
+        document.getElementById('a82_1').style.textDecoration='underline'
+        document.getElementById('a82_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（83）依据《中华人民共和国安全生产法》，城市客运企业的主要负责人在本单位发生生产安全事故时，不立即组织抢救或者在事故调查处理期间擅离职守或者逃匿的，给予降级、撤职的处分，并由应急管理部门处上一年年收入百分之六十至百分之一百的罚款；对逃匿的处
+    <span id="a83_1">____</span>日以下拘留；构成犯罪的，依照刑法有关规定追究刑事责任。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">5</li>
+    <li onclick="show_false(this)">10</li>
+    <li onclick="show_a83();this.onclick=null;show_true(this)">
+    <span id="a83">15</span>
+        &nbsp;<span><img id="a83_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">20</li>
+</ol>
+<script>
+ function show_a83(){i+=1;
+        document.getElementById('a83_1').innerText=document.getElementById("a83").innerText
+        document.getElementById('a83_1').style.color='green'
+        document.getElementById('a83_1').style.fontWeight='bold'
+        document.getElementById('a83_1').style.textDecoration='underline'
+        document.getElementById('a83_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（84）依据《中华人民共和国安全生产法》，关于企业主要负责人在本单位安全生产工作的相关职责，以下说法不正确的是
+    <span id="a84_1">____</span>。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">建立、健全本单位安全生产责任制</li>
+    <li onclick="show_false(this)">组织制定本单位安全生产规章制度和操作规程</li>
+    <li onclick="show_a84();this.onclick=null;show_true(this)">
+    <span id="a84">负责本单位安全生产考核和检查工作</span>
+        &nbsp;<span><img id="a84_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">保证本单位安全生产投入的有效实施</li>
+</ol>
+<script>
+ function show_a84(){i+=1;
+        document.getElementById('a84_1').innerText=document.getElementById("a84").innerText
+        document.getElementById('a84_1').style.color='green'
+        document.getElementById('a84_1').style.fontWeight='bold'
+        document.getElementById('a84_1').style.textDecoration='underline'
+        document.getElementById('a84_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（85）依据《中华人民共和国安全生产法》，生产经营单位的主要负责人是
+    <span id="a85_1">____</span>，对本单位的安全生产工作全面负责。</h4>
+<ol type="A">
+    <li onclick="show_false(this)">本单位安全生产主要责任人</li>
+    <li onclick="show_a85();this.onclick=null;show_true(this)">
+    <span id="a85">本单位安全生产第一责任人</span>
+        &nbsp;<span><img id="a85_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">安全生产主要责任人</li>
+    <li onclick="show_false(this)">安全生产第一责任人</li>
+</ol>
+<script>
+ function show_a85(){i+=1;
+        document.getElementById('a85_1').innerText=document.getElementById("a85").innerText
+        document.getElementById('a85_1').style.color='green'
+        document.getElementById('a85_1').style.fontWeight='bold'
+        document.getElementById('a85_1').style.textDecoration='underline'
+        document.getElementById('a85_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
+
+<h4 class="Que-title">（）在公交车行<span id="a24_1">____</span>罪。</h4>
+<ol type="A">
+    <li onclick="show_a24();this.onclick=null;show_true(this)">
+    <span id="a24">妨害安全驾驶</span>
+        &nbsp;<span><img id="a24_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">危险驾驶</li>
+    <li onclick="show_false(this)">交通肇事</li>
+    <li onclick="show_false(this)">重大责任事故</li>
+</ol>
+<script>
+ function show_a24(){i+=1;
+        document.getElementById('a24_1').innerText=document.getElementById("a24").innerText
+        document.getElementById('a24_1').style.color='green'
+        document.getElementById('a24_1').style.fontWeight='bold'
+        document.getElementById('a24_1').style.textDecoration='underline'
+        document.getElementById('a24_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        if (i>169){i=169}}
+</script>
+<br>
+
 
 
     </div></section>
