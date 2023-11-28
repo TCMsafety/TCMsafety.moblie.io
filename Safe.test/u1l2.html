@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+        <title>公共部分考核试题-单选题</title>
+        <style>
+            body{overflow: auto;}
+            ol{font-size: large;}
+            header{width: 100%;	height: 40px;}
+            .container{position:fixed;width:100%;z-index: 1000;top: 0;background-color: #f8910b;font-size:22px;left: 0;
+            border-bottom: 1px solid #EAEAEA;border-color: rgba(0,0,0,.08);box-shadow: 0 1px 3px rgba(0,0,0,.03);text-align: center;}
+            h4{font-size: large;}
+        </style>
+        <script> 
+        var i=0;a=0;
+            function show_true(element){
+                element.style.color='green'
+                element.style.fontWeight='bold'
+            }
+            function show_false(element){
+                element.style.color='red'
+                element.style.textDecoration='line-through'
+                element.style.opacity="0.3"
+            }
+        </script>
+        
+
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+               <div id="top-title">
+                <a href="./menu.html"><img src="./images/arrow-back.png" width="20" ></a> 
+                公共部分考核—多选题&nbsp;
+                <a href="./u1l2.html"><img src="./images/arrow-next.png" width="20" ></a></div>
+                <div id="top-statu">
+                已完成:&nbsp;<b><span id="que_num">1</span>/94</b>
+                书签:<a href="#01">01</a>&nbsp;<a href="#50">50</a>
+                <a href="#100">94</a>
+                </div></div>
+        </header>
+<section class="ques_list">
+    <div class="Que">   
+        <h4 class="Que-title"><a name="01">（1）依据《中华人民共和国安全生产法》，安全生产工作实行管行业必须管安全、管业务必须管安全、管生产经营必须管安全，强化和落实生产经营单位主体责任与政府监管责任，建立
+            <span id="a1_1">____</span>1<span id="a1_1-2">____</span><span id="a1_1-3">____</span><span id="a1_1-4">____</span>和社会监督的机制。
+            可以不设置安全生产管理机构，但至少应配备兼职的安全生产管理人员。</a></h4>
+        <ol type="A">
+            <li onclick="show_a1();this.onclick=null;show_true(this)"><span id="a1">生产经营单位负责</span>
+                &nbsp;<span><img id="a1_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_a1();this.onclick=null;show_true(this)"><span id="a1-2">职工参与</span>
+                &nbsp;<span><img id="a1_2-2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+                <li onclick="show_a1();this.onclick=null;show_true(this)"><span id="a1-3">政府监管</span>
+                    &nbsp;<span><img id="a1_2-3" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+                    <li onclick="show_a1();this.onclick=null;show_true(this)"><span id="a1-4">行业自律</span>
+                        &nbsp;<span><img id="a1_2-4" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+        </ol>
+        <script>
+            function show_a1(){a+=1;
+                document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
+                document.getElementById('a1_1-2').innerText=document.getElementById("a1-2").innerText
+                document.getElementById('a1_1-3').innerText=document.getElementById("a1-3").innerText
+                document.getElementById('a1_1-4').innerText=document.getElementById("a1-4").innerText
+                document.getElementById('a1_1').style.color='green'
+                document.getElementById('a1_1').style.fontWeight='bold'
+                document.getElementById('a1_1').style.textDecoration='underline'
+                document.getElementById('a1_1-2').style.color='green'
+                document.getElementById('a1_1-2').style.fontWeight='bold'
+                document.getElementById('a1_1-2').style.textDecoration='underline'
+                document.getElementById('a1_1-2').style.color='green'
+                document.getElementById('a1_1-2').style.fontWeight='bold'
+                document.getElementById('a1_1').style.textDecoration='underline'
+                
+                document.getElementById('a1_2').style.display = "inline" 
+                document.getElementById('a1_2').style.display = "inline"
+                document.getElementById('a1_2').style.display = "inline"
+                document.getElementById('a1_2').style.display = "inline"
+                if(a=4){
+                    i+=1
+                }
+                else{
+                    i=1
+                }
+                document.getElementById('que_num').innerText= i
+            }
+        </script>
+    <br>
+    <center><div id="bottom-butt">
+        <a href="./menu.html"><input type="button" value="返回首頁"></a>
+        <a href="./u1l2.html"><input type="button" value="多選題"></a>
+        <a href="./u1l3.html"><input type="button" value="判斷題"></a>
+    </div></center>
+    
+        </div></section>
+    
+        </body>
