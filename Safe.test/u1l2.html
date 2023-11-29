@@ -35,7 +35,7 @@
                 公共部分考核—多选题&nbsp;
                 <a href="./u1l2.html"><img src="./images/arrow-next.png" width="20" ></a></div>
                 <div id="top-statu">
-                已完成:&nbsp;<b><span id="que_num">1</span>/94</b>
+                已完成:&nbsp;<b><span id="que_num">0</span>/94</b>
                 书签:<a href="#01">01</a>&nbsp;<a href="#50">50</a>
                 <a href="#100">94</a>
                 </div></div>
@@ -56,7 +56,7 @@
                         &nbsp;<span><img id="a1_2-4" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
         </ol>
         <script>
-            function show_a1(){a+=1;
+            function show_a1(){
                 document.getElementById('a1_1').innerText=document.getElementById("a1").innerText
                 document.getElementById('a1_1-2').innerText=document.getElementById("a1-2").innerText
                 document.getElementById('a1_1-3').innerText=document.getElementById("a1-3").innerText
@@ -67,19 +67,19 @@
                 document.getElementById('a1_1-2').style.color='green'
                 document.getElementById('a1_1-2').style.fontWeight='bold'
                 document.getElementById('a1_1-2').style.textDecoration='underline'
-                document.getElementById('a1_1-2').style.color='green'
-                document.getElementById('a1_1-2').style.fontWeight='bold'
-                document.getElementById('a1_1').style.textDecoration='underline'
+                document.getElementById('a1_1-3').style.color='green'
+                document.getElementById('a1_1-3').style.fontWeight='bold'
+                document.getElementById('a1_1-3').style.textDecoration='underline'
                 
                 document.getElementById('a1_2').style.display = "inline" 
                 document.getElementById('a1_2').style.display = "inline"
                 document.getElementById('a1_2').style.display = "inline"
                 document.getElementById('a1_2').style.display = "inline"
+                if(a<4){
+                    a+=1
+                }
                 if(a=4){
                     i+=1
-                }
-                else{
-                    i=1
                 }
                 document.getElementById('que_num').innerText= i
             }

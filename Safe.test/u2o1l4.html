@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+        <title>公共部分考核试题-单选题</title>
+        <style>
+            body{overflow: auto;}
+            ol{font-size: large;}
+            header{width: 100%;	height: 40px;}
+            .container{position:fixed;width:100%;z-index: 1000;top: 0;background-color: #f8910b;font-size:22px;left: 0;
+            border-bottom: 1px solid #EAEAEA;border-color: rgba(0,0,0,.08);box-shadow: 0 1px 3px rgba(0,0,0,.03);text-align: center;}
+            h4{font-size: large;}
+            .img-big{display: block; margin-left: auto;margin-right: auto;}
+        </style>
+        <script> 
+        var i=0;a=0;
+            function show_true(element){
+                element.style.color='green'
+                element.style.fontWeight='bold'
+            }
+            function show_false(element){
+                element.style.color='red'
+                element.style.textDecoration='line-through'
+                element.style.opacity="0.3"
+            }
+        </script>
+        
+
+        
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+               <div id="top-title">
+                <a href="./menu.html"><img src="./images/arrow-back.png" width="20" ></a> 
+                公共部分考核—多选题&nbsp;
+                <a href="./u1l2.html"><img src="./images/arrow-next.png" width="20" ></a></div>
+                <div id="top-statu">
+                已完成:&nbsp;<b><span id="que_num">0</span>/94</b>
+                书签:<a href="#01">01</a>&nbsp;<a href="#09">9</a>
+                </div></div>
+        </header>
+        <section class="ques_list">
+            <div class="Que">  
+                
+<h4 class="Que-title">（431）根据《城市轨道交通信号系统运营技术规范（试行）》，信号系统ATS子系统道岔图标显示为<u>(下图)（岔心和名称红色闪烁）</u>，其含义为
+    <span id="a102_1">____</span>。</h4><img src="./images/u2o2l1-102.png" alt="img102" width="150" class="img-big">
+<ol type="A">
+    <li onclick="show_a102();this.onclick=null;show_true(this)">
+    <span id="a102">道岔挤岔</span>
+        &nbsp;<span><img id="a102_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+    <li onclick="show_false(this)">道岔转动未到位</li>
+    <li onclick="show_false(this)">道岔定位单锁</li>
+    <li onclick="show_false(this)">道岔反位单锁</li> 
+    
+</ol>
+<script>
+ function show_a102(){i+=1;
+        document.getElementById('a102_1').innerText=document.getElementById("a102").innerText
+        document.getElementById('a102_1').style.color='green'
+        document.getElementById('a102_1').style.fontWeight='bold'
+        document.getElementById('a102_1').style.textDecoration='underline'
+        document.getElementById('a102_2').style.display = "inline" 
+        document.getElementById('que_num').innerText= i
+        }
+</script>
+<br>
+
+
+    <center><div id="bottom-butt">
+        <a href="./menu.html"><input type="button" value="返回首頁"></a>
+        <a href="./u1l2.html"><input type="button" value="多選題"></a>
+        <a href="./u1l3.html"><input type="button" value="判斷題"></a>
+    </div></center>
+    
+        </div></section>
+    
+        </body>
