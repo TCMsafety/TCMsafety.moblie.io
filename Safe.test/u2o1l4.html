@@ -2,15 +2,18 @@
 <html lang="zh">
     <head>
         <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
-        <title>公共部分考核试题-单选题</title>
+        <title>专业部分-城市公共汽电车-案例题</title>
         <style>
             body{overflow: auto;}
             ol{font-size: large;}
             header{width: 100%;	height: 40px;}
-            .container{position:fixed;width:100%;z-index: 1000;top: 0;background-color: #f8910b;font-size:22px;left: 0;
+            .container{position:fixed;width:100%;z-index: 1000;top: 0;background-color: #ea6363;font-size:22px;left: 0;
             border-bottom: 1px solid #EAEAEA;border-color: rgba(0,0,0,.08);box-shadow: 0 1px 3px rgba(0,0,0,.03);text-align: center;}
             h4{font-size: large;}
-            .img-big{display: block; margin-left: auto;margin-right: auto;}
+            .center{text-align: center;}
+            .ans{border-radius: 3px;background-color: rgb(246, 12, 3);font-size: 20px;color:white}
+            .next{border-radius: 3px;background-color: rgb(84, 188, 132);font-size: 20px;}
+            .pre{border-radius: 3px;background-color: rgb(42, 187, 212);font-size: 20px;}
         </style>
         <script> 
         var i=0;a=0;
@@ -23,6 +26,10 @@
                 element.style.textDecoration='line-through'
                 element.style.opacity="0.3"
             }
+            function end_sum(){
+                t+=1;
+                document.getElementById('que_num').innerText= t
+            }
         </script>
         
 
@@ -32,47 +39,404 @@
         <header class="header">
             <div class="container">
                <div id="top-title">
-                <a href="./menu.html"><img src="./images/arrow-back.png" width="20" ></a> 
-                公共部分考核—多选题&nbsp;
-                <a href="./u1l2.html"><img src="./images/arrow-next.png" width="20" ></a></div>
+                <a href="./u2o1l3.html"><img src="./images/arrow-back.png" width="20" ></a> 
+                城市公共汽电—案例题&nbsp;
+                <a href="./u2o2l1.html"><img src="./images/arrow-next.png" width="20" ></a></div>
                 <div id="top-statu">
-                已完成:&nbsp;<b><span id="que_num">0</span>/94</b>
-                书签:<a href="#01">01</a>&nbsp;<a href="#09">9</a>
+                已完成:&nbsp;<b><span id="que_num">0</span>/9</b>&nbsp;
                 </div></div>
         </header>
-        <section class="ques_list">
-            <div class="Que">  
-                
-<h4 class="Que-title">（431）根据《城市轨道交通信号系统运营技术规范（试行）》，信号系统ATS子系统道岔图标显示为<u>(下图)（岔心和名称红色闪烁）</u>，其含义为
-    <span id="a102_1">____</span>。</h4><img src="./images/u2o2l1-102.png" alt="img102" width="150" class="img-big">
-<ol type="A">
-    <li onclick="show_a102();this.onclick=null;show_true(this)">
-    <span id="a102">道岔挤岔</span>
-        &nbsp;<span><img id="a102_2" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
-    <li onclick="show_false(this)">道岔转动未到位</li>
-    <li onclick="show_false(this)">道岔定位单锁</li>
-    <li onclick="show_false(this)">道岔反位单锁</li> 
+<section class="ques_list">
+    <div class="Que" id="Q431" style="display:break;">   
+        <h4 class="Que-title">（431）14点35分，某市一辆公交车与其他车辆碰撞，发生交通事故，事故造成2人死亡、5人受伤。事故调查发现，该事故系因公交车驾驶员张某突发晕厥疾病，导致车辆失控引发安全事故，排除了驾驶员酒驾、毒驾和其他人为因素。该公交企业已3年未对驾驶员进行体检，对该驾驶员的身体状况不了解。<br><br>依据案例内容，下列说法<u>错误</u>的有
+            <span id="a431">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起重大事故
+                &nbsp;<span><img class="a431_yes"  src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_false(this)">该公交企业应及时掌握驾驶员身体健康状况
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">驾驶员每日上车前应开展适岗状况检查
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该驾驶员存在疲劳驾驶行为
+                &nbsp;<span><img class="a431_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该事故公交企业主要负责人不应负相关责任
+                &nbsp;<span><img class="a431_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center"><input type="button" onclick="img_a431()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a431()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+            var t=0;
+           function img_a431(){
+            var es431 = document.getElementsByClassName('a431_yes');
+            for (var i=0;i<es431.length;i+=1)
+            {es431[i].style.display = 'inline';}
+            document.getElementById("a431").style.textDecoration="underline"
+            document.getElementById("a431").style.color='green'
+            document.getElementById("a431").innerText="ADE"}
+
+        function next_a431(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q431').style.display="none"
+                document.getElementById('Q432').style.display="block"}
+        </script>
+    <br> </div>
+
     
-</ol>
-<script>
- function show_a102(){i+=1;
-        document.getElementById('a102_1').innerText=document.getElementById("a102").innerText
-        document.getElementById('a102_1').style.color='green'
-        document.getElementById('a102_1').style.fontWeight='bold'
-        document.getElementById('a102_1').style.textDecoration='underline'
-        document.getElementById('a102_2').style.display = "inline" 
-        document.getElementById('que_num').innerText= i
-        }
-</script>
-<br>
+    <div class="Que" id="Q432" style="display:none;">   
+        <h4 class="Que-title">（432）一辆公交车在某市城市道路行驶过程中时，车辆突然失控，与在路口等信号灯的6辆小客车、2辆非机动车发生碰撞，造成2名非机动车骑行人受伤。事故发生后，2名事故伤者及公交车驾驶员已被及时送往医院治疗，均无生命危险。事故调查发现，该公交车发生事故时速度为20千米/小时，因转向机构发生故障，导致方向盘突然失控；肇事车辆已超报废期1年，因企业运营车辆紧张，至发生事故尚未进行报废处理，也未及时进行安全技术检测，驾驶员1年未参加企业组织的安全生产教育培训。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a432">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_false(this)">该公交车存在超速行为
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起一般事故
+                &nbsp;<span><img class="a432_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">运营企业应加强驾驶员安全教育培训管理
+                &nbsp;<span><img class="a432_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">运营企业应执行车辆强制报废制度，对临近报废的车辆应加强技术监管，及时处理车辆存在的安全隐患
+                &nbsp;<span><img class="a432_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">安全生产是企业的主体责任，该公交企业应承担一定责任
+                &nbsp;<span><img class="a432_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a432()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a432()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a432()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a432(){
+            var es432 = document.getElementsByClassName('a432_yes');
+            for (var i=0;i<es432.length;i+=1)
+            {es432[i].style.display = 'inline';}
+            document.getElementById("a432").style.textDecoration="underline"
+            document.getElementById("a432").style.color='green'
+            document.getElementById("a432").innerText="BCDE"}
 
+            function next_a432(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q432').style.display="none"
+                document.getElementById('Q433').style.display="block"
+            }
 
+            
+            function pre_a432(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q432').style.display="none"
+                document.getElementById('Q431').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    <div class="Que" id="Q433" style="display:none;">   
+        <h4 class="Que-title">（433）7月20日16时54分许，张某驾驶一辆公交车由北向南行驶至某港湾式停靠站时，直接驶入站台，造成候车人1人受伤，导致站台损坏。事故调查发现，驾驶员张某存在转向操作和制动不及时问题。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a433">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起一般事故
+                &nbsp;<span><img class="a433_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">运营企业应加强驾驶员安全驾驶技能培训
+                &nbsp;<span><img class="a433_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">候车人应承担全部责任
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">候车人应承担一定责任
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该事故公交企业安全生产管理人员应承担一定责任
+                &nbsp;<span><img class="a433_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a433()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a433()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a433()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a433(){
+            var es433 = document.getElementsByClassName('a433_yes');
+            for (var i=0;i<es433.length;i+=1)
+            {es433[i].style.display = 'inline';}
+            document.getElementById("a433").style.textDecoration="underline"
+            document.getElementById("a433").style.color='green'
+            document.getElementById("a433").innerText="ABE"}
+
+            function next_a433(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q433').style.display="none"
+                document.getElementById('Q434').style.display="block"
+            }
+
+            
+            function pre_a433(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q433').style.display="none"
+                document.getElementById('Q432').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+ 
+    <div class="Que" id="Q434" style="display:none;">   
+        <h4 class="Que-title">（434）某公交车辆15时左右，以20千米/小时驶出停车场时，将一自行车骑乘者老人撞倒，事故发生后驾驶员迅速通知了企业负责人，并将自行车骑乘者和后座上乘坐的孩子共2名受伤人员送到附近的医院。事故过程中受伤的老人晚上在转至县级医院过程中不幸死亡。对于死亡老人，公交企业与家属进行了“私下”协商，给予了远超出国家规定的经济赔偿，家属较为满意，企业就未向公安交通管理部门报告。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a434">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_false(this)">该公交车不存在超速行为
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">事故发生后，驾驶员应立即向“120”“122”报警，同时向单位报告
+                &nbsp;<span><img class="a434_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">事故发生后，驾驶员应保护现场，维护现场秩序，防止发生次生事故
+                &nbsp;<span><img class="a434_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">事故发生后，驾驶员应协助医护人员做好现场处理工作，并配合交警部门开展现场勘查及事故的善后处理工作
+                &nbsp;<span><img class="a434_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该企业对死者的处理和瞒报，存在违法行为
+                &nbsp;<span><img class="a434_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a434()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a434()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a434()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a434(){
+            var es434 = document.getElementsByClassName('a434_yes');
+            for (var i=0;i<es434.length;i+=1)
+            {es434[i].style.display = 'inline';}
+            document.getElementById("a434").style.textDecoration="underline"
+            document.getElementById("a434").style.color='green'
+            document.getElementById("a434").innerText="BCDE"}
+
+            function next_a434(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q434').style.display="none"
+                document.getElementById('Q435').style.display="block"
+            }
+
+            
+            function pre_a434(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q434').style.display="none"
+                document.getElementById('Q433').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    <div class="Que" id="Q435" style="display:none;">   
+        <h4 class="Que-title">（435）14时左右，一辆公交车在行驶过程中，车尾突然冒烟，司机立即靠边停车熄火，打开车门，使用车载灭火器进行扑救，待用灭火器将火情控制住后，开始疏散乘客，未造成人员伤亡。事后，驾驶员向单位报告了具体事件发生情况。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a435">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">事件发生后，驾驶员应立即靠边停车熄火，打开车门，迅速疏散乘客，关闭电源、燃油、燃气总开关
+                &nbsp;<span><img class="a435_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">事件发生后，驾驶员应向“110”“119”报警，同时向单位报告
+                &nbsp;<span><img class="a435_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该公交企业应对驾驶员加强此类突发事件的应急演练
+                &nbsp;<span><img class="a435_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该公交企业应对驾驶员加强安全教育培训
+                &nbsp;<span><img class="a435_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">该事故公交企业安全生产管理人员无需负相关责任
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a435()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a435()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a435()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a435(){
+            var es435 = document.getElementsByClassName('a435_yes');
+            for (var i=0;i<es435.length;i+=1)
+            {es435[i].style.display = 'inline';}
+            document.getElementById("a435").style.textDecoration="underline"
+            document.getElementById("a435").style.color='green'
+            document.getElementById("a435").innerText="ABCD"}
+
+            function next_a435(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q435').style.display="none"
+                document.getElementById('Q436').style.display="block"
+            }
+
+            
+            function pre_a435(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q435').style.display="none"
+                document.getElementById('Q434').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    <div class="Que" id="Q436" style="display:none;">   
+        <h4 class="Que-title">（436）上午9时28分许，某市公交车突然偏离行驶车道，跨越实线，与一辆正常对向行驶的小轿车相撞后，公交车失控撞断桥梁护栏后，坠入江中，最终造成连带公交车驾驶员15人无一幸免，全部死亡。事故调查发现，由于在公交车行驶过程中，某乘客与公交车驾驶员发生肢体冲突，公交车驾驶员并未及时停车处理，最终导致该事故发生。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a436">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_false(this)">按照生产安全事故分类标准，该起事故属于一起一般事故
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">该公交企业应加强驾驶员安全应急教育培训
+                &nbsp;<span><img class="a436_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该公交企业应对驾驶员加强处理此类突发事件的应急演练
+                &nbsp;<span><img class="a436_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">公交车应按照相关标准安装驾驶区防护隔离设施
+                &nbsp;<span><img class="a436_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该事故公交企业安全管理人员应承担相应责任
+                &nbsp;<span><img class="a436_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a436()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a436()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a436()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a436(){
+            var es436 = document.getElementsByClassName('a436_yes');
+            for (var i=0;i<es436.length;i+=1)
+            {es436[i].style.display = 'inline';}
+            document.getElementById("a436").style.textDecoration="underline"
+            document.getElementById("a436").style.color='green'
+            document.getElementById("a436").innerText="BCDE"}
+
+            function next_a436(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q436').style.display="none"
+                document.getElementById('Q437').style.display="block"
+            }
+
+            
+            function pre_a436(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q436').style.display="none"
+                document.getElementById('Q435').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    <div class="Que" id="Q437" style="display:none;">   
+        <h4 class="Que-title">（437）（437）11月28日早上6时41分许，李某驾驶一辆公交车由东向西行驶至某路口时，与由南向西左转弯骑自行车的王某发生事故，致王某当场死亡，两辆车不同程度受损。事故调查发现，当日公交车车辆前挡风玻璃有雪花，从而导致驾驶员视线受到影响。李某在当日准备出车前，未对车辆安全性能做检查，且未对车辆各类玻璃和镜面进行除霜，致使在事故发生时，李某并未注意到王某由南向西骑行过来。<br><br>依据案例内容，下列说法<u>错误</u>的有
+            <span id="a437">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起重大事故
+                &nbsp;<span><img class="a437_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">该起事故中李某没有违反相关规定
+                &nbsp;<span><img class="a437_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">王某应承担全部责任
+                &nbsp;<span><img class="a437_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">秋冬季节行车，对公交车除了进行安全性能检查之外，还应对车辆各类玻璃及镜面进行除霜
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">该事故公交企业安全生产管理人员应承担一定责任
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a437()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a437()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a437()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a437(){
+            var es437 = document.getElementsByClassName('a437_yes');
+            for (var i=0;i<es437.length;i+=1)
+            {es437[i].style.display = 'inline';}
+            document.getElementById("a437").style.textDecoration="underline"
+            document.getElementById("a437").style.color='green'
+            document.getElementById("a437").innerText="ABC"}
+
+            function next_a437(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q437').style.display="none"
+                document.getElementById('Q438').style.display="block"
+            }
+
+            
+            function pre_a437(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q437').style.display="none"
+                document.getElementById('Q436').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    <div class="Que" id="Q438" style="display:none;">   
+        <h4 class="Que-title">（438）13时左右，一辆公交车与前方车辆发生追尾事故，造成1人死亡4人受伤的交通事故。事故调查发现，公交车驾驶员在行驶中未能与前方车辆保持一定的安全距离，强行超车占道，遇险时，想驶回本车道，但由于车速过快，刹车措施不及时，造成与前方车辆发生追尾。该公交企业近1年未对驾驶员等从业人员开展安全教育培训。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a438">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起一般事故
+                &nbsp;<span><img class="a438_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">公交车驾驶员应遵守交通安全法律法规，规范操作，按规定车速驾驶，保持安全车距
+                &nbsp;<span><img class="a438_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">该驾驶员不存在违章行为
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该公交企业应加大对驾驶员的安全教育培训力度
+                &nbsp;<span><img class="a438_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_false(this)">该事故公交企业安全生产管理人员无需负相关责任
+                &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a438()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a438()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            <input type="button" onclick="next_a438()" value="下一題>>" class="next"></div>
+        <hr>
+        <script>
+           function img_a438(){
+            var es438 = document.getElementsByClassName('a438_yes');
+            for (var i=0;i<es438.length;i+=1)
+            {es438[i].style.display = 'inline';}
+            document.getElementById("a438").style.textDecoration="underline"
+            document.getElementById("a438").style.color='green'
+            document.getElementById("a438").innerText="ABD"}
+
+            function next_a438(){t+=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q438').style.display="none"
+                document.getElementById('Q439').style.display="block"
+            }
+
+            
+            function pre_a438(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q438').style.display="none"
+                document.getElementById('Q437').style.display="block"
+            }
+        </script>
+    <br> </div>
+ 
+    
+    <div class="Que" id="Q439" style="display:none;">   
+        <h4 class="Que-title">（439）2018年6月，一名公交司机在使用充电设备为车辆充电时，发生轻微爆炸，整个充电器被烧毁，幸无人员伤亡。事故调查后确定事故原因为电网至充电盒连接点松动导致等效阻抗过大引起过热。在事故调查中发现，当事企业未形成充电设施的巡查、检测与维护的记录，设施维护人员对电动汽车充电安全知识、岗位操作规程和紧急情况的处理方法掌握存在欠缺。<br><br>依据案例内容，下列说法<u>正确</u>的有
+            <span id="a439">____</span>。</h4>
+        <ol type="A">
+            <li onclick="show_true(this)">按照生产安全事故分类标准，该起事故属于一起一般事故
+                &nbsp;<span><img class="a439_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
+            <li onclick="show_true(this)">企业应定期进行巡查、检测与维护，及时发现并处理设备运行过程中的异常情况，确保设备处于安全运行状态
+                &nbsp;<span><img class="a439_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">充电站内的充电作业、设备维护等人员应掌握电动汽车充电安全知识、岗位操作规程和紧急情况的处理方法，持证上岗
+                &nbsp;<span><img class="a439_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this)">该企业应加大对工作人员的安全生产教育和岗位技能培训
+                &nbsp;<span><img class="a439_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            <li onclick="show_true(this);end_sum();this.onclick=null;">该企业应做好维修和台账记录管理
+                &nbsp;<span><img class="a439_yes" src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
+            
+        </ol>
+        <div class="center">
+            <input type="button" onclick="pre_a439()" value="<<上一題" class="pre">&nbsp;&nbsp;
+            <input type="button" onclick="img_a439()" value="顯示答案" class="ans">&nbsp;&nbsp;
+            
+        <hr>
+        <script>
+           function img_a439(){
+            var es439 = document.getElementsByClassName('a439_yes');
+            for (var i=0;i<es439.length;i+=1)
+            {es439[i].style.display = 'inline';}
+            document.getElementById("a439").style.textDecoration="underline"
+            document.getElementById("a439").style.color='green'
+            document.getElementById("a439").innerText="ABCDE"}
+
+            function pre_a439(){t-=1;
+                document.getElementById('que_num').innerText= t
+                document.getElementById('Q439').style.display="none"
+                document.getElementById('Q438').style.display="block"
+            }
+
+        </script>
+    <br> </div>
+ 
+    </section>
     <center><div id="bottom-butt">
         <a href="./menu.html"><input type="button" value="返回首頁"></a>
-        <a href="./u1l2.html"><input type="button" value="多選題"></a>
-        <a href="./u1l3.html"><input type="button" value="判斷題"></a>
+        <a href="./u2o1l1.html"><input type="button" value="單選題"></a>
+        <a href="./u2o1l2.html"><input type="button" value="多選題"></a>
+        <a href="./u2o1l3.html"><input type="button" value="判斷題"></a>
     </div></center>
-    
-        </div></section>
-    
         </body>
