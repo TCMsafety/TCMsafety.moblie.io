@@ -14,6 +14,9 @@
             .ans{border-radius: 3px;background-color: rgb(246, 12, 3);font-size: 20px;color:white}
             .next{border-radius: 3px;background-color: rgb(84, 188, 132);font-size: 20px;}
             .pre{border-radius: 3px;background-color: rgb(42, 187, 212);font-size: 20px;}
+
+            .bot_but{border-radius: 3px;font-size: 20px;}
+            .bot_menu{border-radius: 3px;font-size: 20px;background-color: rgb(242, 143, 81);color:white}
         </style>
         <script> 
         var i=0;a=0;
@@ -25,6 +28,10 @@
                 element.style.color='red'
                 element.style.textDecoration='line-through'
                 element.style.opacity="0.3"
+            }
+            function end_sum(){
+                t+=1;
+                document.getElementById('que_num').innerText= t
             }
         </script>
         
@@ -44,8 +51,8 @@
         </header>
 <section class="ques_list">
     <div class="Que" id="Q170" style="display:break;">   
-        <h4 class="Que-title"><a name="170">（170）依据《中华人民共和国安全生产法》，安全生产工作实行管行业必须管安全、管业务必须管安全、管生产经营必须管安全，强化和落实生产经营单位主体责任与政府监管责任，建立
-            <span id="a170">____</span>和社会监督的机制。</a></h4>
+        <h4 class="Que-title">（170）依据《中华人民共和国安全生产法》，安全生产工作实行管行业必须管安全、管业务必须管安全、管生产经营必须管安全，强化和落实生产经营单位主体责任与政府监管责任，建立
+            <span id="a170">____</span>和社会监督的机制。</h4>
         <ol type="A">
             <li onclick="show_true(this)">生产经营单位负责
                 &nbsp;<span><img class="a170_yes"  src="./images/yes.png" height="20" width="20"  style='display:none'></span></li>
@@ -4119,17 +4126,13 @@
                 document.getElementById('Q262').style.display="block"
             }
 
-            function end_sum(){
-                t+=1;
-                document.getElementById('que_num').innerText= t
-            }
         </script>
     <br> </div>
  
     </section>
     <center><div id="bottom-butt">
-        <a href="./menu.html"><input type="button" value="返回首頁"></a>
-        <a href="./u1l1.html"><input type="button" value="多選題"></a>
-        <a href="./u1l3.html"><input type="button" value="判斷題"></a>
+        <a href="./menu.html"><input class="bot_menu" type="button" value="返回首頁"></a>
+        <a href="./u1l1.html"><input class="bot_but" type="button" value="單選題"></a>
+        <a href="./u1l3.html"><input class="bot_but" type="button" value="判斷題"></a>
     </div></center>
         </body>
