@@ -42,6 +42,7 @@
         <header class="header">
             <div class="container">
                <div id="top-title">
+                <a name="top_slide"></a>
                 <a href="./u2o1l3.html"><img src="./images/arrow-back.png" width="20" ></a> 
                 城市轨道交通—案例题&nbsp;
                 <a href="./u2o2l1.html"><img src="./images/arrow-next.png" width="20" ></a></div>
@@ -68,7 +69,7 @@
                 &nbsp;<span><img src="./images/yes.png" height="20" width="20"  style='display:none'></span></li></li>
             </ol>
         <div class="center"><input type="button" onclick="img_a361()" value="顯示答案" class="ans">&nbsp;&nbsp;
-            <input type="button" onclick="next_a361()" value="下一題>>" class="next"></div>
+            <input type="button" onclick="next_a361()" value="下一題>>" class="next" href="#top_slide"></div>
         <hr>
         <script>
             var t=0;
@@ -123,8 +124,7 @@
                 document.getElementById('que_num').innerText= t
                 document.getElementById('Q362').style.display="none"
                 document.getElementById('Q363').style.display="block"
-                window.scrollTo(0,-2);
-                document.body.scrollTop=0;            
+                       
             }
 
             
