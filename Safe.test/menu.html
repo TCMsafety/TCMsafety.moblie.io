@@ -9,10 +9,74 @@
             .close{font-weight: bolder;color:gray}
             .fo{font-size: medium;text-align: center;}
             #test{width:100%;font-size: medium;text-align: center;}
-            body{background-color: rgb(152, 152, 151);}
+            body{background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);}
             #content-list{background-color: rgba(255,255,255,0.8);}
+            h2{text-shadow: 5px 5px 5px silver;}
+            input{color:black;font-weight: bold;}
+              /* 遮罩层 */
+  #overlay {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    /* IE9以下不支持rgba模式 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 兼容IE8及以下 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+    display: none;
+  }
+  /* 弹出框主体 */
+  .popup {
+    background-color: #ffffff;
+    max-width: 400px;
+    min-width: 200px;
+    height: 240px;
+    border-radius: 5px;
+    margin: 100px auto;
+    text-align: center;
+  }
+  /* 弹出框的标题 */
+  .popup_title {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px #cccccc;
+  }
+  /* 弹出框的内容 */
+  .popup_content {
+    height: 50px;
+    line-height: 20px;
+    padding: 15px 20px;
+  }
+  /* 弹出框的按钮栏 */
+  .popup_btn {
+    padding-bottom: 10px;
+  }
+  /* 弹出框的按钮 */
+  .popup_btn button {
+    color: #778899;
+    width: 40%;
+    height: 40px;
+    cursor: pointer;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    margin: 5px 10px;
+    color: #ffffff;
+    background-color: #337ab7;
+  }
+
+            
         </style>
         <script>
+  function showPopup(){
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "block";
+  }
+  function hidePopup(){
+    var overlay = document.getElementById("overlay");
+    overlay.style.display = "none";
+  }
 
         </script>
     </head>
@@ -48,8 +112,22 @@
                             <li><a href="./u2o3l4.html"><input type="button" src="" value="案例题（7道）"></a></li>
                             </ol>
                            </ul> 
-                           <center><input type="button" src="" value="模擬考試" id="test"></center>
-                    <div class="fo">2023年所有題庫已作更新&nbsp;&nbsp;&nbsp;<a id="vis" onclik="vv()"><u>使用須知及條款</u></a></div>
+                           <center><input type="button" src="" value="模擬考試(未開放)" id="test"></center>
+                    <div class="fo">2023年所有題庫已作更新&nbsp;&nbsp;&nbsp;<span id="vis" onclick="showPopup()"><u>須知條款</u></span></div>
+
+                  
+                    <div id="overlay">
+                      <div class="popup">
+                        <p class="popup_title">須知條款</p>
+                        <p class="popup_content">僅供內部交流學習使用，不得作任何營利用途。<br>此網站為個人發佈於GitHub Pages的靜態網站，不會收集及保存任何使用者資料數據。</p>
+                        
+                        <div class="popup_btn">
+                          <button class="confirmBtn" onclick="hidePopup()">确认</button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
         </fieldset>
     </body>
 </html>
